@@ -1,18 +1,18 @@
 # BlackboardRest\CourseGroupsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1CoursesCourseIdGroupsGet**](CourseGroupsApi.md#learnApiPublicV1CoursesCourseIdGroupsGet) | **GET** /learn/api/public/v1/courses/{courseId}/groups | Get Groups
-[**learnApiPublicV1CoursesCourseIdGroupsGroupIdDelete**](CourseGroupsApi.md#learnApiPublicV1CoursesCourseIdGroupsGroupIdDelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/groups/{groupId} | Delete Group
-[**learnApiPublicV1CoursesCourseIdGroupsGroupIdGet**](CourseGroupsApi.md#learnApiPublicV1CoursesCourseIdGroupsGroupIdGet) | **GET** /learn/api/public/v1/courses/{courseId}/groups/{groupId} | Get Group
-[**learnApiPublicV1CoursesCourseIdGroupsGroupIdPatch**](CourseGroupsApi.md#learnApiPublicV1CoursesCourseIdGroupsGroupIdPatch) | **PATCH** /learn/api/public/v1/courses/{courseId}/groups/{groupId} | Update Group
-[**learnApiPublicV1CoursesCourseIdGroupsPost**](CourseGroupsApi.md#learnApiPublicV1CoursesCourseIdGroupsPost) | **POST** /learn/api/public/v1/courses/{courseId}/groups | Create Group
+[**coursesCourseIdGroupsGet**](CourseGroupsApi.md#coursesCourseIdGroupsGet) | **GET** courses/{courseId}/groups | Get Groups
+[**coursesCourseIdGroupsGroupIdDelete**](CourseGroupsApi.md#coursesCourseIdGroupsGroupIdDelete) | **DELETE** courses/{courseId}/groups/{groupId} | Delete Group
+[**coursesCourseIdGroupsGroupIdGet**](CourseGroupsApi.md#coursesCourseIdGroupsGroupIdGet) | **GET** courses/{courseId}/groups/{groupId} | Get Group
+[**coursesCourseIdGroupsGroupIdPatch**](CourseGroupsApi.md#coursesCourseIdGroupsGroupIdPatch) | **PATCH** courses/{courseId}/groups/{groupId} | Update Group
+[**coursesCourseIdGroupsPost**](CourseGroupsApi.md#coursesCourseIdGroupsPost) | **POST** courses/{courseId}/groups | Create Group
 
 
-# **learnApiPublicV1CoursesCourseIdGroupsGet**
-> \BlackboardRest\Model\InlineResponse20012 learnApiPublicV1CoursesCourseIdGroupsGet($course_id, $offset, $limit, $sort, $fields)
+# **coursesCourseIdGroupsGet**
+> \BlackboardRest\Model\InlineResponse20012 coursesCourseIdGroupsGet($course_id, $offset, $limit, $sort, $fields)
 
 Get Groups
 
@@ -36,10 +36,10 @@ $sort = "sort_example"; // string | Properties to sort by. This is a comma-delim
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGroupsGet($course_id, $offset, $limit, $sort, $fields);
+    $result = $api_instance->coursesCourseIdGroupsGet($course_id, $offset, $limit, $sort, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGroupsApi->learnApiPublicV1CoursesCourseIdGroupsGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGroupsApi->coursesCourseIdGroupsGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -69,8 +69,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGroupsGroupIdDelete**
-> learnApiPublicV1CoursesCourseIdGroupsGroupIdDelete($course_id, $group_id)
+# **coursesCourseIdGroupsGroupIdDelete**
+> coursesCourseIdGroupsGroupIdDelete($course_id, $group_id)
 
 Delete Group
 
@@ -91,9 +91,9 @@ $course_id = "course_id_example"; // string | The course or organization ID.  Th
 $group_id = "group_id_example"; // string | The group ID.  This may be the primary ID, or any of the secondary IDs prefixed with the ID type.    | ID type    | Example                               |  |------------|---------------------------------------|  | primary    | _123_1                                |  | externalId | externalId:breakfastClub              |
 
 try {
-    $api_instance->learnApiPublicV1CoursesCourseIdGroupsGroupIdDelete($course_id, $group_id);
+    $api_instance->coursesCourseIdGroupsGroupIdDelete($course_id, $group_id);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGroupsApi->learnApiPublicV1CoursesCourseIdGroupsGroupIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGroupsApi->coursesCourseIdGroupsGroupIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -120,8 +120,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGroupsGroupIdGet**
-> \BlackboardRest\Model\Group learnApiPublicV1CoursesCourseIdGroupsGroupIdGet($course_id, $group_id, $fields)
+# **coursesCourseIdGroupsGroupIdGet**
+> \BlackboardRest\Model\Group coursesCourseIdGroupsGroupIdGet($course_id, $group_id, $fields)
 
 Get Group
 
@@ -143,10 +143,10 @@ $group_id = "group_id_example"; // string | The group ID.  This may be the prima
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGroupsGroupIdGet($course_id, $group_id, $fields);
+    $result = $api_instance->coursesCourseIdGroupsGroupIdGet($course_id, $group_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGroupsApi->learnApiPublicV1CoursesCourseIdGroupsGroupIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGroupsApi->coursesCourseIdGroupsGroupIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -174,8 +174,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGroupsGroupIdPatch**
-> \BlackboardRest\Model\Group learnApiPublicV1CoursesCourseIdGroupsGroupIdPatch($course_id, $group_id, $input, $fields)
+# **coursesCourseIdGroupsGroupIdPatch**
+> \BlackboardRest\Model\Group coursesCourseIdGroupsGroupIdPatch($course_id, $group_id, $input, $fields)
 
 Update Group
 
@@ -198,10 +198,10 @@ $input = new \BlackboardRest\Model\Input20(); // \BlackboardRest\Model\Input20 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGroupsGroupIdPatch($course_id, $group_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdGroupsGroupIdPatch($course_id, $group_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGroupsApi->learnApiPublicV1CoursesCourseIdGroupsGroupIdPatch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGroupsApi->coursesCourseIdGroupsGroupIdPatch: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -230,8 +230,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGroupsPost**
-> \BlackboardRest\Model\Group learnApiPublicV1CoursesCourseIdGroupsPost($course_id, $input, $fields)
+# **coursesCourseIdGroupsPost**
+> \BlackboardRest\Model\Group coursesCourseIdGroupsPost($course_id, $input, $fields)
 
 Create Group
 
@@ -253,10 +253,10 @@ $input = new \BlackboardRest\Model\Input19(); // \BlackboardRest\Model\Input19 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGroupsPost($course_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdGroupsPost($course_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGroupsApi->learnApiPublicV1CoursesCourseIdGroupsPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGroupsApi->coursesCourseIdGroupsPost: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

@@ -88,7 +88,7 @@ class AnnouncementsApi
     }
 
     /**
-     * Operation learnApiPublicV1AnnouncementsAnnouncementIdDelete
+     * Operation announcementsAnnouncementIdDelete
      *
      * Delete Announcement
      *
@@ -97,14 +97,14 @@ class AnnouncementsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return void
      */
-    public function learnApiPublicV1AnnouncementsAnnouncementIdDelete($announcement_id, $fields = null)
+    public function announcementsAnnouncementIdDelete($announcement_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1AnnouncementsAnnouncementIdDeleteWithHttpInfo($announcement_id, $fields);
+        list($response) = $this->announcementsAnnouncementIdDeleteWithHttpInfo($announcement_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1AnnouncementsAnnouncementIdDeleteWithHttpInfo
+     * Operation announcementsAnnouncementIdDeleteWithHttpInfo
      *
      * Delete Announcement
      *
@@ -113,14 +113,14 @@ class AnnouncementsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1AnnouncementsAnnouncementIdDeleteWithHttpInfo($announcement_id, $fields = null)
+    public function announcementsAnnouncementIdDeleteWithHttpInfo($announcement_id, $fields = null)
     {
         // verify the required parameter 'announcement_id' is set
         if ($announcement_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $announcement_id when calling learnApiPublicV1AnnouncementsAnnouncementIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $announcement_id when calling announcementsAnnouncementIdDelete');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/announcements/{announcementId}";
+        $resourcePath = "announcements/{announcementId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -167,7 +167,7 @@ class AnnouncementsApi
                 $httpBody,
                 $headerParams,
                 null,
-                '/learn/api/public/v1/announcements/{announcementId}'
+                'announcements/{announcementId}'
             );
 
             return [null, $statusCode, $httpHeader];
@@ -192,7 +192,7 @@ class AnnouncementsApi
     }
 
     /**
-     * Operation learnApiPublicV1AnnouncementsAnnouncementIdGet
+     * Operation announcementsAnnouncementIdGet
      *
      * Get Announcement
      *
@@ -201,14 +201,14 @@ class AnnouncementsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Announcement
      */
-    public function learnApiPublicV1AnnouncementsAnnouncementIdGet($announcement_id, $fields = null)
+    public function announcementsAnnouncementIdGet($announcement_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1AnnouncementsAnnouncementIdGetWithHttpInfo($announcement_id, $fields);
+        list($response) = $this->announcementsAnnouncementIdGetWithHttpInfo($announcement_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1AnnouncementsAnnouncementIdGetWithHttpInfo
+     * Operation announcementsAnnouncementIdGetWithHttpInfo
      *
      * Get Announcement
      *
@@ -217,14 +217,14 @@ class AnnouncementsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Announcement, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1AnnouncementsAnnouncementIdGetWithHttpInfo($announcement_id, $fields = null)
+    public function announcementsAnnouncementIdGetWithHttpInfo($announcement_id, $fields = null)
     {
         // verify the required parameter 'announcement_id' is set
         if ($announcement_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $announcement_id when calling learnApiPublicV1AnnouncementsAnnouncementIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $announcement_id when calling announcementsAnnouncementIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/announcements/{announcementId}";
+        $resourcePath = "announcements/{announcementId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -271,7 +271,7 @@ class AnnouncementsApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Announcement',
-                '/learn/api/public/v1/announcements/{announcementId}'
+                'announcements/{announcementId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Announcement', $httpHeader), $statusCode, $httpHeader];
@@ -296,7 +296,7 @@ class AnnouncementsApi
     }
 
     /**
-     * Operation learnApiPublicV1AnnouncementsAnnouncementIdPatch
+     * Operation announcementsAnnouncementIdPatch
      *
      * Update Announcement
      *
@@ -306,14 +306,14 @@ class AnnouncementsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Announcement
      */
-    public function learnApiPublicV1AnnouncementsAnnouncementIdPatch($announcement_id, $input, $fields = null)
+    public function announcementsAnnouncementIdPatch($announcement_id, $input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1AnnouncementsAnnouncementIdPatchWithHttpInfo($announcement_id, $input, $fields);
+        list($response) = $this->announcementsAnnouncementIdPatchWithHttpInfo($announcement_id, $input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1AnnouncementsAnnouncementIdPatchWithHttpInfo
+     * Operation announcementsAnnouncementIdPatchWithHttpInfo
      *
      * Update Announcement
      *
@@ -323,18 +323,18 @@ class AnnouncementsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Announcement, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1AnnouncementsAnnouncementIdPatchWithHttpInfo($announcement_id, $input, $fields = null)
+    public function announcementsAnnouncementIdPatchWithHttpInfo($announcement_id, $input, $fields = null)
     {
         // verify the required parameter 'announcement_id' is set
         if ($announcement_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $announcement_id when calling learnApiPublicV1AnnouncementsAnnouncementIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $announcement_id when calling announcementsAnnouncementIdPatch');
         }
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1AnnouncementsAnnouncementIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling announcementsAnnouncementIdPatch');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/announcements/{announcementId}";
+        $resourcePath = "announcements/{announcementId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -386,7 +386,7 @@ class AnnouncementsApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Announcement',
-                '/learn/api/public/v1/announcements/{announcementId}'
+                'announcements/{announcementId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Announcement', $httpHeader), $statusCode, $httpHeader];
@@ -415,7 +415,7 @@ class AnnouncementsApi
     }
 
     /**
-     * Operation learnApiPublicV1AnnouncementsGet
+     * Operation announcementsGet
      *
      * Get Announcements
      *
@@ -425,14 +425,14 @@ class AnnouncementsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse200
      */
-    public function learnApiPublicV1AnnouncementsGet($offset = null, $limit = null, $fields = null)
+    public function announcementsGet($offset = null, $limit = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1AnnouncementsGetWithHttpInfo($offset, $limit, $fields);
+        list($response) = $this->announcementsGetWithHttpInfo($offset, $limit, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1AnnouncementsGetWithHttpInfo
+     * Operation announcementsGetWithHttpInfo
      *
      * Get Announcements
      *
@@ -442,10 +442,10 @@ class AnnouncementsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1AnnouncementsGetWithHttpInfo($offset = null, $limit = null, $fields = null)
+    public function announcementsGetWithHttpInfo($offset = null, $limit = null, $fields = null)
     {
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/announcements";
+        $resourcePath = "announcements";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -492,7 +492,7 @@ class AnnouncementsApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse200',
-                '/learn/api/public/v1/announcements'
+                'announcements'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader];
@@ -517,7 +517,7 @@ class AnnouncementsApi
     }
 
     /**
-     * Operation learnApiPublicV1AnnouncementsPost
+     * Operation announcementsPost
      *
      * Create Announcement
      *
@@ -526,14 +526,14 @@ class AnnouncementsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Announcement
      */
-    public function learnApiPublicV1AnnouncementsPost($input, $fields = null)
+    public function announcementsPost($input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1AnnouncementsPostWithHttpInfo($input, $fields);
+        list($response) = $this->announcementsPostWithHttpInfo($input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1AnnouncementsPostWithHttpInfo
+     * Operation announcementsPostWithHttpInfo
      *
      * Create Announcement
      *
@@ -542,14 +542,14 @@ class AnnouncementsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Announcement, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1AnnouncementsPostWithHttpInfo($input, $fields = null)
+    public function announcementsPostWithHttpInfo($input, $fields = null)
     {
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1AnnouncementsPost');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling announcementsPost');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/announcements";
+        $resourcePath = "announcements";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -593,7 +593,7 @@ class AnnouncementsApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Announcement',
-                '/learn/api/public/v1/announcements'
+                'announcements'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Announcement', $httpHeader), $statusCode, $httpHeader];

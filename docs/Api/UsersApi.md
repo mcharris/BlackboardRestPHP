@@ -1,18 +1,18 @@
 # BlackboardRest\UsersApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1UsersGet**](UsersApi.md#learnApiPublicV1UsersGet) | **GET** /learn/api/public/v1/users | Get Users
-[**learnApiPublicV1UsersPost**](UsersApi.md#learnApiPublicV1UsersPost) | **POST** /learn/api/public/v1/users | Create User
-[**learnApiPublicV1UsersUserIdDelete**](UsersApi.md#learnApiPublicV1UsersUserIdDelete) | **DELETE** /learn/api/public/v1/users/{userId} | Delete User
-[**learnApiPublicV1UsersUserIdGet**](UsersApi.md#learnApiPublicV1UsersUserIdGet) | **GET** /learn/api/public/v1/users/{userId} | Get User
-[**learnApiPublicV1UsersUserIdPatch**](UsersApi.md#learnApiPublicV1UsersUserIdPatch) | **PATCH** /learn/api/public/v1/users/{userId} | Update User
+[**usersGet**](UsersApi.md#usersGet) | **GET** users | Get Users
+[**usersPost**](UsersApi.md#usersPost) | **POST** users | Create User
+[**usersUserIdDelete**](UsersApi.md#usersUserIdDelete) | **DELETE** users/{userId} | Delete User
+[**usersUserIdGet**](UsersApi.md#usersUserIdGet) | **GET** users/{userId} | Get User
+[**usersUserIdPatch**](UsersApi.md#usersUserIdPatch) | **PATCH** users/{userId} | Update User
 
 
-# **learnApiPublicV1UsersGet**
-> \BlackboardRest\Model\InlineResponse2008 learnApiPublicV1UsersGet($offset, $limit, $user_name, $external_id, $created, $created_compare, $data_source_id, $sort, $fields)
+# **usersGet**
+> \BlackboardRest\Model\InlineResponse2008 usersGet($offset, $limit, $user_name, $external_id, $created, $created_compare, $data_source_id, $sort, $fields)
 
 Get Users
 
@@ -40,10 +40,10 @@ $sort = "sort_example"; // string | Properties to sort by. This is a comma-delim
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1UsersGet($offset, $limit, $user_name, $external_id, $created, $created_compare, $data_source_id, $sort, $fields);
+    $result = $api_instance->usersGet($offset, $limit, $user_name, $external_id, $created, $created_compare, $data_source_id, $sort, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling UsersApi->learnApiPublicV1UsersGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling UsersApi->usersGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -77,8 +77,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1UsersPost**
-> \BlackboardRest\Model\User learnApiPublicV1UsersPost($input, $fields)
+# **usersPost**
+> \BlackboardRest\Model\User usersPost($input, $fields)
 
 Create User
 
@@ -99,10 +99,10 @@ $input = new \BlackboardRest\Model\Input14(); // \BlackboardRest\Model\Input14 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1UsersPost($input, $fields);
+    $result = $api_instance->usersPost($input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling UsersApi->learnApiPublicV1UsersPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling UsersApi->usersPost: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -129,8 +129,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1UsersUserIdDelete**
-> learnApiPublicV1UsersUserIdDelete($user_id, $fields)
+# **usersUserIdDelete**
+> usersUserIdDelete($user_id, $fields)
 
 Delete User
 
@@ -151,9 +151,9 @@ $user_id = "user_id_example"; // string | The user ID.  This may be the primary 
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $api_instance->learnApiPublicV1UsersUserIdDelete($user_id, $fields);
+    $api_instance->usersUserIdDelete($user_id, $fields);
 } catch (Exception $e) {
-    echo 'Exception when calling UsersApi->learnApiPublicV1UsersUserIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling UsersApi->usersUserIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -180,8 +180,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1UsersUserIdGet**
-> \BlackboardRest\Model\User learnApiPublicV1UsersUserIdGet($user_id, $fields)
+# **usersUserIdGet**
+> \BlackboardRest\Model\User usersUserIdGet($user_id, $fields)
 
 Get User
 
@@ -202,10 +202,10 @@ $user_id = "user_id_example"; // string | The user ID.  This may be the primary 
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1UsersUserIdGet($user_id, $fields);
+    $result = $api_instance->usersUserIdGet($user_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling UsersApi->learnApiPublicV1UsersUserIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling UsersApi->usersUserIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -232,8 +232,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1UsersUserIdPatch**
-> \BlackboardRest\Model\User learnApiPublicV1UsersUserIdPatch($user_id, $input, $fields)
+# **usersUserIdPatch**
+> \BlackboardRest\Model\User usersUserIdPatch($user_id, $input, $fields)
 
 Update User
 
@@ -255,10 +255,10 @@ $input = new \BlackboardRest\Model\Input15(); // \BlackboardRest\Model\Input15 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1UsersUserIdPatch($user_id, $input, $fields);
+    $result = $api_instance->usersUserIdPatch($user_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling UsersApi->learnApiPublicV1UsersUserIdPatch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling UsersApi->usersUserIdPatch: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

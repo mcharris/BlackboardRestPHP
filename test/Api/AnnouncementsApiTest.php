@@ -77,56 +77,56 @@ class AnnouncementsApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1AnnouncementsAnnouncementIdDelete
+     * Test case for announcementsAnnouncementIdDelete
      *
      * Delete Announcement.
      *
      */
-    public function testLearnApiPublicV1AnnouncementsAnnouncementIdDelete()
+    public function testAnnouncementsAnnouncementIdDelete()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1AnnouncementsAnnouncementIdGet
+     * Test case for announcementsAnnouncementIdGet
      *
      * Get Announcement.
      *
      */
-    public function testLearnApiPublicV1AnnouncementsAnnouncementIdGet()
+    public function testAnnouncementsAnnouncementIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1AnnouncementsAnnouncementIdPatch
+     * Test case for announcementsAnnouncementIdPatch
      *
      * Update Announcement.
      *
      */
-    public function testLearnApiPublicV1AnnouncementsAnnouncementIdPatch()
+    public function testAnnouncementsAnnouncementIdPatch()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1AnnouncementsGet
+     * Test case for announcementsGet
      *
      * Get Announcements.
      *
      */
-    public function testLearnApiPublicV1AnnouncementsGet()
+    public function testAnnouncementsGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1AnnouncementsPost
+     * Test case for announcementsPost
      *
      * Create Announcement.
      *
      */
-    public function testLearnApiPublicV1AnnouncementsPost()
+    public function testAnnouncementsPost()
     {
 
     }

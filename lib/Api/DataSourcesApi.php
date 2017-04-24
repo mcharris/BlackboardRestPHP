@@ -88,7 +88,7 @@ class DataSourcesApi
     }
 
     /**
-     * Operation learnApiPublicV1DataSourcesDataSourceIdDelete
+     * Operation dataSourcesDataSourceIdDelete
      *
      * Delete Data Source
      *
@@ -97,14 +97,14 @@ class DataSourcesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return void
      */
-    public function learnApiPublicV1DataSourcesDataSourceIdDelete($data_source_id, $fields = null)
+    public function dataSourcesDataSourceIdDelete($data_source_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1DataSourcesDataSourceIdDeleteWithHttpInfo($data_source_id, $fields);
+        list($response) = $this->dataSourcesDataSourceIdDeleteWithHttpInfo($data_source_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1DataSourcesDataSourceIdDeleteWithHttpInfo
+     * Operation dataSourcesDataSourceIdDeleteWithHttpInfo
      *
      * Delete Data Source
      *
@@ -113,14 +113,14 @@ class DataSourcesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1DataSourcesDataSourceIdDeleteWithHttpInfo($data_source_id, $fields = null)
+    public function dataSourcesDataSourceIdDeleteWithHttpInfo($data_source_id, $fields = null)
     {
         // verify the required parameter 'data_source_id' is set
         if ($data_source_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $data_source_id when calling learnApiPublicV1DataSourcesDataSourceIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $data_source_id when calling dataSourcesDataSourceIdDelete');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/dataSources/{dataSourceId}";
+        $resourcePath = "dataSources/{dataSourceId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -167,7 +167,7 @@ class DataSourcesApi
                 $httpBody,
                 $headerParams,
                 null,
-                '/learn/api/public/v1/dataSources/{dataSourceId}'
+                'dataSources/{dataSourceId}'
             );
 
             return [null, $statusCode, $httpHeader];
@@ -192,7 +192,7 @@ class DataSourcesApi
     }
 
     /**
-     * Operation learnApiPublicV1DataSourcesDataSourceIdGet
+     * Operation dataSourcesDataSourceIdGet
      *
      * Get Data Source
      *
@@ -201,14 +201,14 @@ class DataSourcesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\DataSource
      */
-    public function learnApiPublicV1DataSourcesDataSourceIdGet($data_source_id, $fields = null)
+    public function dataSourcesDataSourceIdGet($data_source_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1DataSourcesDataSourceIdGetWithHttpInfo($data_source_id, $fields);
+        list($response) = $this->dataSourcesDataSourceIdGetWithHttpInfo($data_source_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1DataSourcesDataSourceIdGetWithHttpInfo
+     * Operation dataSourcesDataSourceIdGetWithHttpInfo
      *
      * Get Data Source
      *
@@ -217,14 +217,14 @@ class DataSourcesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\DataSource, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1DataSourcesDataSourceIdGetWithHttpInfo($data_source_id, $fields = null)
+    public function dataSourcesDataSourceIdGetWithHttpInfo($data_source_id, $fields = null)
     {
         // verify the required parameter 'data_source_id' is set
         if ($data_source_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $data_source_id when calling learnApiPublicV1DataSourcesDataSourceIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $data_source_id when calling dataSourcesDataSourceIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/dataSources/{dataSourceId}";
+        $resourcePath = "dataSources/{dataSourceId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -271,7 +271,7 @@ class DataSourcesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\DataSource',
-                '/learn/api/public/v1/dataSources/{dataSourceId}'
+                'dataSources/{dataSourceId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\DataSource', $httpHeader), $statusCode, $httpHeader];
@@ -300,7 +300,7 @@ class DataSourcesApi
     }
 
     /**
-     * Operation learnApiPublicV1DataSourcesDataSourceIdPatch
+     * Operation dataSourcesDataSourceIdPatch
      *
      * Update Data Source
      *
@@ -310,14 +310,14 @@ class DataSourcesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\DataSource
      */
-    public function learnApiPublicV1DataSourcesDataSourceIdPatch($data_source_id, $input, $fields = null)
+    public function dataSourcesDataSourceIdPatch($data_source_id, $input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1DataSourcesDataSourceIdPatchWithHttpInfo($data_source_id, $input, $fields);
+        list($response) = $this->dataSourcesDataSourceIdPatchWithHttpInfo($data_source_id, $input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1DataSourcesDataSourceIdPatchWithHttpInfo
+     * Operation dataSourcesDataSourceIdPatchWithHttpInfo
      *
      * Update Data Source
      *
@@ -327,18 +327,18 @@ class DataSourcesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\DataSource, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1DataSourcesDataSourceIdPatchWithHttpInfo($data_source_id, $input, $fields = null)
+    public function dataSourcesDataSourceIdPatchWithHttpInfo($data_source_id, $input, $fields = null)
     {
         // verify the required parameter 'data_source_id' is set
         if ($data_source_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $data_source_id when calling learnApiPublicV1DataSourcesDataSourceIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $data_source_id when calling dataSourcesDataSourceIdPatch');
         }
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1DataSourcesDataSourceIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling dataSourcesDataSourceIdPatch');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/dataSources/{dataSourceId}";
+        $resourcePath = "dataSources/{dataSourceId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -390,7 +390,7 @@ class DataSourcesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\DataSource',
-                '/learn/api/public/v1/dataSources/{dataSourceId}'
+                'dataSources/{dataSourceId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\DataSource', $httpHeader), $statusCode, $httpHeader];
@@ -423,7 +423,7 @@ class DataSourcesApi
     }
 
     /**
-     * Operation learnApiPublicV1DataSourcesGet
+     * Operation dataSourcesGet
      *
      * Get Data Sources
      *
@@ -434,14 +434,14 @@ class DataSourcesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse2006
      */
-    public function learnApiPublicV1DataSourcesGet($offset = null, $limit = null, $external_id = null, $fields = null)
+    public function dataSourcesGet($offset = null, $limit = null, $external_id = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1DataSourcesGetWithHttpInfo($offset, $limit, $external_id, $fields);
+        list($response) = $this->dataSourcesGetWithHttpInfo($offset, $limit, $external_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1DataSourcesGetWithHttpInfo
+     * Operation dataSourcesGetWithHttpInfo
      *
      * Get Data Sources
      *
@@ -452,10 +452,10 @@ class DataSourcesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse2006, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1DataSourcesGetWithHttpInfo($offset = null, $limit = null, $external_id = null, $fields = null)
+    public function dataSourcesGetWithHttpInfo($offset = null, $limit = null, $external_id = null, $fields = null)
     {
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/dataSources";
+        $resourcePath = "dataSources";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -506,7 +506,7 @@ class DataSourcesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse2006',
-                '/learn/api/public/v1/dataSources'
+                'dataSources'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse2006', $httpHeader), $statusCode, $httpHeader];
@@ -531,7 +531,7 @@ class DataSourcesApi
     }
 
     /**
-     * Operation learnApiPublicV1DataSourcesPost
+     * Operation dataSourcesPost
      *
      * Create Data Source
      *
@@ -540,14 +540,14 @@ class DataSourcesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\DataSource
      */
-    public function learnApiPublicV1DataSourcesPost($input, $fields = null)
+    public function dataSourcesPost($input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1DataSourcesPostWithHttpInfo($input, $fields);
+        list($response) = $this->dataSourcesPostWithHttpInfo($input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1DataSourcesPostWithHttpInfo
+     * Operation dataSourcesPostWithHttpInfo
      *
      * Create Data Source
      *
@@ -556,14 +556,14 @@ class DataSourcesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\DataSource, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1DataSourcesPostWithHttpInfo($input, $fields = null)
+    public function dataSourcesPostWithHttpInfo($input, $fields = null)
     {
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1DataSourcesPost');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling dataSourcesPost');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/dataSources";
+        $resourcePath = "dataSources";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -607,7 +607,7 @@ class DataSourcesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\DataSource',
-                '/learn/api/public/v1/dataSources'
+                'dataSources'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\DataSource', $httpHeader), $statusCode, $httpHeader];

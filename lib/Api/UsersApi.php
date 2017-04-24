@@ -88,7 +88,7 @@ class UsersApi
     }
 
     /**
-     * Operation learnApiPublicV1UsersGet
+     * Operation usersGet
      *
      * Get Users
      *
@@ -104,14 +104,14 @@ class UsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse2008
      */
-    public function learnApiPublicV1UsersGet($offset = null, $limit = null, $user_name = null, $external_id = null, $created = null, $created_compare = null, $data_source_id = null, $sort = null, $fields = null)
+    public function usersGet($offset = null, $limit = null, $user_name = null, $external_id = null, $created = null, $created_compare = null, $data_source_id = null, $sort = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1UsersGetWithHttpInfo($offset, $limit, $user_name, $external_id, $created, $created_compare, $data_source_id, $sort, $fields);
+        list($response) = $this->usersGetWithHttpInfo($offset, $limit, $user_name, $external_id, $created, $created_compare, $data_source_id, $sort, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1UsersGetWithHttpInfo
+     * Operation usersGetWithHttpInfo
      *
      * Get Users
      *
@@ -127,10 +127,10 @@ class UsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse2008, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1UsersGetWithHttpInfo($offset = null, $limit = null, $user_name = null, $external_id = null, $created = null, $created_compare = null, $data_source_id = null, $sort = null, $fields = null)
+    public function usersGetWithHttpInfo($offset = null, $limit = null, $user_name = null, $external_id = null, $created = null, $created_compare = null, $data_source_id = null, $sort = null, $fields = null)
     {
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/users";
+        $resourcePath = "users";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -201,7 +201,7 @@ class UsersApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse2008',
-                '/learn/api/public/v1/users'
+                'users'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse2008', $httpHeader), $statusCode, $httpHeader];
@@ -226,7 +226,7 @@ class UsersApi
     }
 
     /**
-     * Operation learnApiPublicV1UsersPost
+     * Operation usersPost
      *
      * Create User
      *
@@ -235,14 +235,14 @@ class UsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\User
      */
-    public function learnApiPublicV1UsersPost($input, $fields = null)
+    public function usersPost($input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1UsersPostWithHttpInfo($input, $fields);
+        list($response) = $this->usersPostWithHttpInfo($input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1UsersPostWithHttpInfo
+     * Operation usersPostWithHttpInfo
      *
      * Create User
      *
@@ -251,14 +251,14 @@ class UsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\User, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1UsersPostWithHttpInfo($input, $fields = null)
+    public function usersPostWithHttpInfo($input, $fields = null)
     {
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1UsersPost');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling usersPost');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/users";
+        $resourcePath = "users";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -302,7 +302,7 @@ class UsersApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\User',
-                '/learn/api/public/v1/users'
+                'users'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\User', $httpHeader), $statusCode, $httpHeader];
@@ -331,7 +331,7 @@ class UsersApi
     }
 
     /**
-     * Operation learnApiPublicV1UsersUserIdDelete
+     * Operation usersUserIdDelete
      *
      * Delete User
      *
@@ -340,14 +340,14 @@ class UsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return void
      */
-    public function learnApiPublicV1UsersUserIdDelete($user_id, $fields = null)
+    public function usersUserIdDelete($user_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1UsersUserIdDeleteWithHttpInfo($user_id, $fields);
+        list($response) = $this->usersUserIdDeleteWithHttpInfo($user_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1UsersUserIdDeleteWithHttpInfo
+     * Operation usersUserIdDeleteWithHttpInfo
      *
      * Delete User
      *
@@ -356,14 +356,14 @@ class UsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1UsersUserIdDeleteWithHttpInfo($user_id, $fields = null)
+    public function usersUserIdDeleteWithHttpInfo($user_id, $fields = null)
     {
         // verify the required parameter 'user_id' is set
         if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling learnApiPublicV1UsersUserIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling usersUserIdDelete');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/users/{userId}";
+        $resourcePath = "users/{userId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -410,7 +410,7 @@ class UsersApi
                 $httpBody,
                 $headerParams,
                 null,
-                '/learn/api/public/v1/users/{userId}'
+                'users/{userId}'
             );
 
             return [null, $statusCode, $httpHeader];
@@ -435,7 +435,7 @@ class UsersApi
     }
 
     /**
-     * Operation learnApiPublicV1UsersUserIdGet
+     * Operation usersUserIdGet
      *
      * Get User
      *
@@ -444,14 +444,14 @@ class UsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\User
      */
-    public function learnApiPublicV1UsersUserIdGet($user_id, $fields = null)
+    public function usersUserIdGet($user_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1UsersUserIdGetWithHttpInfo($user_id, $fields);
+        list($response) = $this->usersUserIdGetWithHttpInfo($user_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1UsersUserIdGetWithHttpInfo
+     * Operation usersUserIdGetWithHttpInfo
      *
      * Get User
      *
@@ -460,14 +460,14 @@ class UsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\User, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1UsersUserIdGetWithHttpInfo($user_id, $fields = null)
+    public function usersUserIdGetWithHttpInfo($user_id, $fields = null)
     {
         // verify the required parameter 'user_id' is set
         if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling learnApiPublicV1UsersUserIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling usersUserIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/users/{userId}";
+        $resourcePath = "users/{userId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -514,7 +514,7 @@ class UsersApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\User',
-                '/learn/api/public/v1/users/{userId}'
+                'users/{userId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\User', $httpHeader), $statusCode, $httpHeader];
@@ -543,7 +543,7 @@ class UsersApi
     }
 
     /**
-     * Operation learnApiPublicV1UsersUserIdPatch
+     * Operation usersUserIdPatch
      *
      * Update User
      *
@@ -553,14 +553,14 @@ class UsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\User
      */
-    public function learnApiPublicV1UsersUserIdPatch($user_id, $input, $fields = null)
+    public function usersUserIdPatch($user_id, $input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1UsersUserIdPatchWithHttpInfo($user_id, $input, $fields);
+        list($response) = $this->usersUserIdPatchWithHttpInfo($user_id, $input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1UsersUserIdPatchWithHttpInfo
+     * Operation usersUserIdPatchWithHttpInfo
      *
      * Update User
      *
@@ -570,18 +570,18 @@ class UsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\User, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1UsersUserIdPatchWithHttpInfo($user_id, $input, $fields = null)
+    public function usersUserIdPatchWithHttpInfo($user_id, $input, $fields = null)
     {
         // verify the required parameter 'user_id' is set
         if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling learnApiPublicV1UsersUserIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling usersUserIdPatch');
         }
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1UsersUserIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling usersUserIdPatch');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/users/{userId}";
+        $resourcePath = "users/{userId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -633,7 +633,7 @@ class UsersApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\User',
-                '/learn/api/public/v1/users/{userId}'
+                'users/{userId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\User', $httpHeader), $statusCode, $httpHeader];

@@ -66,9 +66,9 @@ $announcement_id = "announcement_id_example"; // string |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $api_instance->learnApiPublicV1AnnouncementsAnnouncementIdDelete($announcement_id, $fields);
+    $api_instance->announcementsAnnouncementIdDelete($announcement_id, $fields);
 } catch (Exception $e) {
-    echo 'Exception when calling AnnouncementsApi->learnApiPublicV1AnnouncementsAnnouncementIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling AnnouncementsApi->announcementsAnnouncementIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 
 ?>
@@ -76,76 +76,76 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AnnouncementsApi* | [**learnApiPublicV1AnnouncementsAnnouncementIdDelete**](docs/Api/AnnouncementsApi.md#learnapipublicv1announcementsannouncementiddelete) | **DELETE** /learn/api/public/v1/announcements/{announcementId} | Delete Announcement
-*AnnouncementsApi* | [**learnApiPublicV1AnnouncementsAnnouncementIdGet**](docs/Api/AnnouncementsApi.md#learnapipublicv1announcementsannouncementidget) | **GET** /learn/api/public/v1/announcements/{announcementId} | Get Announcement
-*AnnouncementsApi* | [**learnApiPublicV1AnnouncementsAnnouncementIdPatch**](docs/Api/AnnouncementsApi.md#learnapipublicv1announcementsannouncementidpatch) | **PATCH** /learn/api/public/v1/announcements/{announcementId} | Update Announcement
-*AnnouncementsApi* | [**learnApiPublicV1AnnouncementsGet**](docs/Api/AnnouncementsApi.md#learnapipublicv1announcementsget) | **GET** /learn/api/public/v1/announcements | Get Announcements
-*AnnouncementsApi* | [**learnApiPublicV1AnnouncementsPost**](docs/Api/AnnouncementsApi.md#learnapipublicv1announcementspost) | **POST** /learn/api/public/v1/announcements | Create Announcement
-*ContentApi* | [**learnApiPublicV1CoursesCourseIdContentsContentIdChildrenGet**](docs/Api/ContentApi.md#learnapipublicv1coursescourseidcontentscontentidchildrenget) | **GET** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/children | Get Children
-*ContentApi* | [**learnApiPublicV1CoursesCourseIdContentsContentIdChildrenPost**](docs/Api/ContentApi.md#learnapipublicv1coursescourseidcontentscontentidchildrenpost) | **POST** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/children | Create Child
-*ContentApi* | [**learnApiPublicV1CoursesCourseIdContentsContentIdDelete**](docs/Api/ContentApi.md#learnapipublicv1coursescourseidcontentscontentiddelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/contents/{contentId} | Delete Content
-*ContentApi* | [**learnApiPublicV1CoursesCourseIdContentsContentIdGet**](docs/Api/ContentApi.md#learnapipublicv1coursescourseidcontentscontentidget) | **GET** /learn/api/public/v1/courses/{courseId}/contents/{contentId} | Get Content
-*ContentApi* | [**learnApiPublicV1CoursesCourseIdContentsContentIdPatch**](docs/Api/ContentApi.md#learnapipublicv1coursescourseidcontentscontentidpatch) | **PATCH** /learn/api/public/v1/courses/{courseId}/contents/{contentId} | Update Content
-*ContentApi* | [**learnApiPublicV1CoursesCourseIdContentsGet**](docs/Api/ContentApi.md#learnapipublicv1coursescourseidcontentsget) | **GET** /learn/api/public/v1/courses/{courseId}/contents | Get Contents
-*ContentApi* | [**learnApiPublicV1CoursesCourseIdContentsPost**](docs/Api/ContentApi.md#learnapipublicv1coursescourseidcontentspost) | **POST** /learn/api/public/v1/courses/{courseId}/contents | Create Content
-*ContentGroupAssignmentsApi* | [**learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet**](docs/Api/ContentGroupAssignmentsApi.md#learnapipublicv1coursescourseidcontentscontentidgroupsget) | **GET** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups | Get Content Groups
-*ContentGroupAssignmentsApi* | [**learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete**](docs/Api/ContentGroupAssignmentsApi.md#learnapipublicv1coursescourseidcontentscontentidgroupsgroupiddelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId} | Delete Content Group
-*ContentGroupAssignmentsApi* | [**learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet**](docs/Api/ContentGroupAssignmentsApi.md#learnapipublicv1coursescourseidcontentscontentidgroupsgroupidget) | **GET** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId} | Get Content Group
-*ContentGroupAssignmentsApi* | [**learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut**](docs/Api/ContentGroupAssignmentsApi.md#learnapipublicv1coursescourseidcontentscontentidgroupsgroupidput) | **PUT** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId} | Create Content Group
-*CourseGradesApi* | [**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet**](docs/Api/CourseGradesApi.md#learnapipublicv1coursescourseidgradebookcolumnscolumnidattemptsattemptidget) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/attempts/{attemptId} | Get Column Attempt
-*CourseGradesApi* | [**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet**](docs/Api/CourseGradesApi.md#learnapipublicv1coursescourseidgradebookcolumnscolumnidattemptsget) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/attempts | Get Column Attempts
-*CourseGradesApi* | [**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete**](docs/Api/CourseGradesApi.md#learnapipublicv1coursescourseidgradebookcolumnscolumniddelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId} | Delete Grade Column
-*CourseGradesApi* | [**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet**](docs/Api/CourseGradesApi.md#learnapipublicv1coursescourseidgradebookcolumnscolumnidget) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId} | Get Grade Column
-*CourseGradesApi* | [**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch**](docs/Api/CourseGradesApi.md#learnapipublicv1coursescourseidgradebookcolumnscolumnidpatch) | **PATCH** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId} | Update Grade Column
-*CourseGradesApi* | [**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet**](docs/Api/CourseGradesApi.md#learnapipublicv1coursescourseidgradebookcolumnscolumnidusersget) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users | Get Column Grades
-*CourseGradesApi* | [**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet**](docs/Api/CourseGradesApi.md#learnapipublicv1coursescourseidgradebookcolumnscolumnidusersuseridget) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users/{userId} | Get Column Grade
-*CourseGradesApi* | [**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch**](docs/Api/CourseGradesApi.md#learnapipublicv1coursescourseidgradebookcolumnscolumnidusersuseridpatch) | **PATCH** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users/{userId} | Update Column Grade
-*CourseGradesApi* | [**learnApiPublicV1CoursesCourseIdGradebookColumnsGet**](docs/Api/CourseGradesApi.md#learnapipublicv1coursescourseidgradebookcolumnsget) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns | Get Grade Columns
-*CourseGradesApi* | [**learnApiPublicV1CoursesCourseIdGradebookColumnsPost**](docs/Api/CourseGradesApi.md#learnapipublicv1coursescourseidgradebookcolumnspost) | **POST** /learn/api/public/v1/courses/{courseId}/gradebook/columns | Create Grade Column
-*CourseGradesApi* | [**learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet**](docs/Api/CourseGradesApi.md#learnapipublicv1coursescourseidgradebookusersuseridget) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/users/{userId} | Get User Grades
-*CourseGroupUsersApi* | [**learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet**](docs/Api/CourseGroupUsersApi.md#learnapipublicv1coursescourseidgroupsgroupidusersget) | **GET** /learn/api/public/v1/courses/{courseId}/groups/{groupId}/users | Get Group Memberships
-*CourseGroupUsersApi* | [**learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete**](docs/Api/CourseGroupUsersApi.md#learnapipublicv1coursescourseidgroupsgroupidusersuseriddelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId} | Delete Group Membership
-*CourseGroupUsersApi* | [**learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet**](docs/Api/CourseGroupUsersApi.md#learnapipublicv1coursescourseidgroupsgroupidusersuseridget) | **GET** /learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId} | Get Group Membership
-*CourseGroupUsersApi* | [**learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut**](docs/Api/CourseGroupUsersApi.md#learnapipublicv1coursescourseidgroupsgroupidusersuseridput) | **PUT** /learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId} | Put Group Membership
-*CourseGroupsApi* | [**learnApiPublicV1CoursesCourseIdGroupsGet**](docs/Api/CourseGroupsApi.md#learnapipublicv1coursescourseidgroupsget) | **GET** /learn/api/public/v1/courses/{courseId}/groups | Get Groups
-*CourseGroupsApi* | [**learnApiPublicV1CoursesCourseIdGroupsGroupIdDelete**](docs/Api/CourseGroupsApi.md#learnapipublicv1coursescourseidgroupsgroupiddelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/groups/{groupId} | Delete Group
-*CourseGroupsApi* | [**learnApiPublicV1CoursesCourseIdGroupsGroupIdGet**](docs/Api/CourseGroupsApi.md#learnapipublicv1coursescourseidgroupsgroupidget) | **GET** /learn/api/public/v1/courses/{courseId}/groups/{groupId} | Get Group
-*CourseGroupsApi* | [**learnApiPublicV1CoursesCourseIdGroupsGroupIdPatch**](docs/Api/CourseGroupsApi.md#learnapipublicv1coursescourseidgroupsgroupidpatch) | **PATCH** /learn/api/public/v1/courses/{courseId}/groups/{groupId} | Update Group
-*CourseGroupsApi* | [**learnApiPublicV1CoursesCourseIdGroupsPost**](docs/Api/CourseGroupsApi.md#learnapipublicv1coursescourseidgroupspost) | **POST** /learn/api/public/v1/courses/{courseId}/groups | Create Group
-*CourseMembershipsApi* | [**learnApiPublicV1CoursesCourseIdUsersGet**](docs/Api/CourseMembershipsApi.md#learnapipublicv1coursescourseidusersget) | **GET** /learn/api/public/v1/courses/{courseId}/users | Get Memberships
-*CourseMembershipsApi* | [**learnApiPublicV1CoursesCourseIdUsersUserIdDelete**](docs/Api/CourseMembershipsApi.md#learnapipublicv1coursescourseidusersuseriddelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/users/{userId} | Delete Membership
-*CourseMembershipsApi* | [**learnApiPublicV1CoursesCourseIdUsersUserIdGet**](docs/Api/CourseMembershipsApi.md#learnapipublicv1coursescourseidusersuseridget) | **GET** /learn/api/public/v1/courses/{courseId}/users/{userId} | Get Membership
-*CourseMembershipsApi* | [**learnApiPublicV1CoursesCourseIdUsersUserIdPatch**](docs/Api/CourseMembershipsApi.md#learnapipublicv1coursescourseidusersuseridpatch) | **PATCH** /learn/api/public/v1/courses/{courseId}/users/{userId} | Update Membership
-*CourseMembershipsApi* | [**learnApiPublicV1CoursesCourseIdUsersUserIdPut**](docs/Api/CourseMembershipsApi.md#learnapipublicv1coursescourseidusersuseridput) | **PUT** /learn/api/public/v1/courses/{courseId}/users/{userId} | Create Membership
-*CourseMembershipsApi* | [**learnApiPublicV1UsersUserIdCoursesGet**](docs/Api/CourseMembershipsApi.md#learnapipublicv1usersuseridcoursesget) | **GET** /learn/api/public/v1/users/{userId}/courses | Get Memberships
-*CoursesApi* | [**learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet**](docs/Api/CoursesApi.md#learnapipublicv1coursescourseidchildrenchildcourseidget) | **GET** /learn/api/public/v1/courses/{courseId}/children/{childCourseId} | Get Child
-*CoursesApi* | [**learnApiPublicV1CoursesCourseIdChildrenGet**](docs/Api/CoursesApi.md#learnapipublicv1coursescourseidchildrenget) | **GET** /learn/api/public/v1/courses/{courseId}/children | Get Children
-*CoursesApi* | [**learnApiPublicV1CoursesCourseIdDelete**](docs/Api/CoursesApi.md#learnapipublicv1coursescourseiddelete) | **DELETE** /learn/api/public/v1/courses/{courseId} | Delete Course
-*CoursesApi* | [**learnApiPublicV1CoursesCourseIdGet**](docs/Api/CoursesApi.md#learnapipublicv1coursescourseidget) | **GET** /learn/api/public/v1/courses/{courseId} | Get Course
-*CoursesApi* | [**learnApiPublicV1CoursesCourseIdPatch**](docs/Api/CoursesApi.md#learnapipublicv1coursescourseidpatch) | **PATCH** /learn/api/public/v1/courses/{courseId} | Update Course
-*CoursesApi* | [**learnApiPublicV1CoursesGet**](docs/Api/CoursesApi.md#learnapipublicv1coursesget) | **GET** /learn/api/public/v1/courses | Get Courses
-*CoursesApi* | [**learnApiPublicV1CoursesPost**](docs/Api/CoursesApi.md#learnapipublicv1coursespost) | **POST** /learn/api/public/v1/courses | Create Course
-*DataSourcesApi* | [**learnApiPublicV1DataSourcesDataSourceIdDelete**](docs/Api/DataSourcesApi.md#learnapipublicv1datasourcesdatasourceiddelete) | **DELETE** /learn/api/public/v1/dataSources/{dataSourceId} | Delete Data Source
-*DataSourcesApi* | [**learnApiPublicV1DataSourcesDataSourceIdGet**](docs/Api/DataSourcesApi.md#learnapipublicv1datasourcesdatasourceidget) | **GET** /learn/api/public/v1/dataSources/{dataSourceId} | Get Data Source
-*DataSourcesApi* | [**learnApiPublicV1DataSourcesDataSourceIdPatch**](docs/Api/DataSourcesApi.md#learnapipublicv1datasourcesdatasourceidpatch) | **PATCH** /learn/api/public/v1/dataSources/{dataSourceId} | Update Data Source
-*DataSourcesApi* | [**learnApiPublicV1DataSourcesGet**](docs/Api/DataSourcesApi.md#learnapipublicv1datasourcesget) | **GET** /learn/api/public/v1/dataSources | Get Data Sources
-*DataSourcesApi* | [**learnApiPublicV1DataSourcesPost**](docs/Api/DataSourcesApi.md#learnapipublicv1datasourcespost) | **POST** /learn/api/public/v1/dataSources | Create Data Source
-*OauthApi* | [**learnApiPublicV1Oauth2TokenPost**](docs/Api/OauthApi.md#learnapipublicv1oauth2tokenpost) | **POST** /learn/api/public/v1/oauth2/token | Request Token
-*SystemApi* | [**learnApiPublicV1SystemVersionGet**](docs/Api/SystemApi.md#learnapipublicv1systemversionget) | **GET** /learn/api/public/v1/system/version | Get Version
-*TermsApi* | [**learnApiPublicV1TermsGet**](docs/Api/TermsApi.md#learnapipublicv1termsget) | **GET** /learn/api/public/v1/terms | Get Terms
-*TermsApi* | [**learnApiPublicV1TermsPost**](docs/Api/TermsApi.md#learnapipublicv1termspost) | **POST** /learn/api/public/v1/terms | Create Term
-*TermsApi* | [**learnApiPublicV1TermsTermIdDelete**](docs/Api/TermsApi.md#learnapipublicv1termstermiddelete) | **DELETE** /learn/api/public/v1/terms/{termId} | Delete Term
-*TermsApi* | [**learnApiPublicV1TermsTermIdGet**](docs/Api/TermsApi.md#learnapipublicv1termstermidget) | **GET** /learn/api/public/v1/terms/{termId} | Get Term
-*TermsApi* | [**learnApiPublicV1TermsTermIdPatch**](docs/Api/TermsApi.md#learnapipublicv1termstermidpatch) | **PATCH** /learn/api/public/v1/terms/{termId} | Update Term
-*UsersApi* | [**learnApiPublicV1UsersGet**](docs/Api/UsersApi.md#learnapipublicv1usersget) | **GET** /learn/api/public/v1/users | Get Users
-*UsersApi* | [**learnApiPublicV1UsersPost**](docs/Api/UsersApi.md#learnapipublicv1userspost) | **POST** /learn/api/public/v1/users | Create User
-*UsersApi* | [**learnApiPublicV1UsersUserIdDelete**](docs/Api/UsersApi.md#learnapipublicv1usersuseriddelete) | **DELETE** /learn/api/public/v1/users/{userId} | Delete User
-*UsersApi* | [**learnApiPublicV1UsersUserIdGet**](docs/Api/UsersApi.md#learnapipublicv1usersuseridget) | **GET** /learn/api/public/v1/users/{userId} | Get User
-*UsersApi* | [**learnApiPublicV1UsersUserIdPatch**](docs/Api/UsersApi.md#learnapipublicv1usersuseridpatch) | **PATCH** /learn/api/public/v1/users/{userId} | Update User
+*AnnouncementsApi* | [**announcementsAnnouncementIdDelete**](docs/Api/AnnouncementsApi.md#announcementsannouncementiddelete) | **DELETE** announcements/{announcementId} | Delete Announcement
+*AnnouncementsApi* | [**announcementsAnnouncementIdGet**](docs/Api/AnnouncementsApi.md#announcementsannouncementidget) | **GET** announcements/{announcementId} | Get Announcement
+*AnnouncementsApi* | [**announcementsAnnouncementIdPatch**](docs/Api/AnnouncementsApi.md#announcementsannouncementidpatch) | **PATCH** announcements/{announcementId} | Update Announcement
+*AnnouncementsApi* | [**announcementsGet**](docs/Api/AnnouncementsApi.md#announcementsget) | **GET** announcements | Get Announcements
+*AnnouncementsApi* | [**announcementsPost**](docs/Api/AnnouncementsApi.md#announcementspost) | **POST** announcements | Create Announcement
+*ContentApi* | [**coursesCourseIdContentsContentIdChildrenGet**](docs/Api/ContentApi.md#coursescourseidcontentscontentidchildrenget) | **GET** courses/{courseId}/contents/{contentId}/children | Get Children
+*ContentApi* | [**coursesCourseIdContentsContentIdChildrenPost**](docs/Api/ContentApi.md#coursescourseidcontentscontentidchildrenpost) | **POST** courses/{courseId}/contents/{contentId}/children | Create Child
+*ContentApi* | [**coursesCourseIdContentsContentIdDelete**](docs/Api/ContentApi.md#coursescourseidcontentscontentiddelete) | **DELETE** courses/{courseId}/contents/{contentId} | Delete Content
+*ContentApi* | [**coursesCourseIdContentsContentIdGet**](docs/Api/ContentApi.md#coursescourseidcontentscontentidget) | **GET** courses/{courseId}/contents/{contentId} | Get Content
+*ContentApi* | [**coursesCourseIdContentsContentIdPatch**](docs/Api/ContentApi.md#coursescourseidcontentscontentidpatch) | **PATCH** courses/{courseId}/contents/{contentId} | Update Content
+*ContentApi* | [**coursesCourseIdContentsGet**](docs/Api/ContentApi.md#coursescourseidcontentsget) | **GET** courses/{courseId}/contents | Get Contents
+*ContentApi* | [**coursesCourseIdContentsPost**](docs/Api/ContentApi.md#coursescourseidcontentspost) | **POST** courses/{courseId}/contents | Create Content
+*ContentGroupAssignmentsApi* | [**coursesCourseIdContentsContentIdGroupsGet**](docs/Api/ContentGroupAssignmentsApi.md#coursescourseidcontentscontentidgroupsget) | **GET** courses/{courseId}/contents/{contentId}/groups | Get Content Groups
+*ContentGroupAssignmentsApi* | [**coursesCourseIdContentsContentIdGroupsGroupIdDelete**](docs/Api/ContentGroupAssignmentsApi.md#coursescourseidcontentscontentidgroupsgroupiddelete) | **DELETE** courses/{courseId}/contents/{contentId}/groups/{groupId} | Delete Content Group
+*ContentGroupAssignmentsApi* | [**coursesCourseIdContentsContentIdGroupsGroupIdGet**](docs/Api/ContentGroupAssignmentsApi.md#coursescourseidcontentscontentidgroupsgroupidget) | **GET** courses/{courseId}/contents/{contentId}/groups/{groupId} | Get Content Group
+*ContentGroupAssignmentsApi* | [**coursesCourseIdContentsContentIdGroupsGroupIdPut**](docs/Api/ContentGroupAssignmentsApi.md#coursescourseidcontentscontentidgroupsgroupidput) | **PUT** courses/{courseId}/contents/{contentId}/groups/{groupId} | Create Content Group
+*CourseGradesApi* | [**coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet**](docs/Api/CourseGradesApi.md#coursescourseidgradebookcolumnscolumnidattemptsattemptidget) | **GET** courses/{courseId}/gradebook/columns/{columnId}/attempts/{attemptId} | Get Column Attempt
+*CourseGradesApi* | [**coursesCourseIdGradebookColumnsColumnIdAttemptsGet**](docs/Api/CourseGradesApi.md#coursescourseidgradebookcolumnscolumnidattemptsget) | **GET** courses/{courseId}/gradebook/columns/{columnId}/attempts | Get Column Attempts
+*CourseGradesApi* | [**coursesCourseIdGradebookColumnsColumnIdDelete**](docs/Api/CourseGradesApi.md#coursescourseidgradebookcolumnscolumniddelete) | **DELETE** courses/{courseId}/gradebook/columns/{columnId} | Delete Grade Column
+*CourseGradesApi* | [**coursesCourseIdGradebookColumnsColumnIdGet**](docs/Api/CourseGradesApi.md#coursescourseidgradebookcolumnscolumnidget) | **GET** courses/{courseId}/gradebook/columns/{columnId} | Get Grade Column
+*CourseGradesApi* | [**coursesCourseIdGradebookColumnsColumnIdPatch**](docs/Api/CourseGradesApi.md#coursescourseidgradebookcolumnscolumnidpatch) | **PATCH** courses/{courseId}/gradebook/columns/{columnId} | Update Grade Column
+*CourseGradesApi* | [**coursesCourseIdGradebookColumnsColumnIdUsersGet**](docs/Api/CourseGradesApi.md#coursescourseidgradebookcolumnscolumnidusersget) | **GET** courses/{courseId}/gradebook/columns/{columnId}/users | Get Column Grades
+*CourseGradesApi* | [**coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet**](docs/Api/CourseGradesApi.md#coursescourseidgradebookcolumnscolumnidusersuseridget) | **GET** courses/{courseId}/gradebook/columns/{columnId}/users/{userId} | Get Column Grade
+*CourseGradesApi* | [**coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch**](docs/Api/CourseGradesApi.md#coursescourseidgradebookcolumnscolumnidusersuseridpatch) | **PATCH** courses/{courseId}/gradebook/columns/{columnId}/users/{userId} | Update Column Grade
+*CourseGradesApi* | [**coursesCourseIdGradebookColumnsGet**](docs/Api/CourseGradesApi.md#coursescourseidgradebookcolumnsget) | **GET** courses/{courseId}/gradebook/columns | Get Grade Columns
+*CourseGradesApi* | [**coursesCourseIdGradebookColumnsPost**](docs/Api/CourseGradesApi.md#coursescourseidgradebookcolumnspost) | **POST** courses/{courseId}/gradebook/columns | Create Grade Column
+*CourseGradesApi* | [**coursesCourseIdGradebookUsersUserIdGet**](docs/Api/CourseGradesApi.md#coursescourseidgradebookusersuseridget) | **GET** courses/{courseId}/gradebook/users/{userId} | Get User Grades
+*CourseGroupUsersApi* | [**coursesCourseIdGroupsGroupIdUsersGet**](docs/Api/CourseGroupUsersApi.md#coursescourseidgroupsgroupidusersget) | **GET** courses/{courseId}/groups/{groupId}/users | Get Group Memberships
+*CourseGroupUsersApi* | [**coursesCourseIdGroupsGroupIdUsersUserIdDelete**](docs/Api/CourseGroupUsersApi.md#coursescourseidgroupsgroupidusersuseriddelete) | **DELETE** courses/{courseId}/groups/{groupId}/users/{userId} | Delete Group Membership
+*CourseGroupUsersApi* | [**coursesCourseIdGroupsGroupIdUsersUserIdGet**](docs/Api/CourseGroupUsersApi.md#coursescourseidgroupsgroupidusersuseridget) | **GET** courses/{courseId}/groups/{groupId}/users/{userId} | Get Group Membership
+*CourseGroupUsersApi* | [**coursesCourseIdGroupsGroupIdUsersUserIdPut**](docs/Api/CourseGroupUsersApi.md#coursescourseidgroupsgroupidusersuseridput) | **PUT** courses/{courseId}/groups/{groupId}/users/{userId} | Put Group Membership
+*CourseGroupsApi* | [**coursesCourseIdGroupsGet**](docs/Api/CourseGroupsApi.md#coursescourseidgroupsget) | **GET** courses/{courseId}/groups | Get Groups
+*CourseGroupsApi* | [**coursesCourseIdGroupsGroupIdDelete**](docs/Api/CourseGroupsApi.md#coursescourseidgroupsgroupiddelete) | **DELETE** courses/{courseId}/groups/{groupId} | Delete Group
+*CourseGroupsApi* | [**coursesCourseIdGroupsGroupIdGet**](docs/Api/CourseGroupsApi.md#coursescourseidgroupsgroupidget) | **GET** courses/{courseId}/groups/{groupId} | Get Group
+*CourseGroupsApi* | [**coursesCourseIdGroupsGroupIdPatch**](docs/Api/CourseGroupsApi.md#coursescourseidgroupsgroupidpatch) | **PATCH** courses/{courseId}/groups/{groupId} | Update Group
+*CourseGroupsApi* | [**coursesCourseIdGroupsPost**](docs/Api/CourseGroupsApi.md#coursescourseidgroupspost) | **POST** courses/{courseId}/groups | Create Group
+*CourseMembershipsApi* | [**coursesCourseIdUsersGet**](docs/Api/CourseMembershipsApi.md#coursescourseidusersget) | **GET** courses/{courseId}/users | Get Memberships
+*CourseMembershipsApi* | [**coursesCourseIdUsersUserIdDelete**](docs/Api/CourseMembershipsApi.md#coursescourseidusersuseriddelete) | **DELETE** courses/{courseId}/users/{userId} | Delete Membership
+*CourseMembershipsApi* | [**coursesCourseIdUsersUserIdGet**](docs/Api/CourseMembershipsApi.md#coursescourseidusersuseridget) | **GET** courses/{courseId}/users/{userId} | Get Membership
+*CourseMembershipsApi* | [**coursesCourseIdUsersUserIdPatch**](docs/Api/CourseMembershipsApi.md#coursescourseidusersuseridpatch) | **PATCH** courses/{courseId}/users/{userId} | Update Membership
+*CourseMembershipsApi* | [**coursesCourseIdUsersUserIdPut**](docs/Api/CourseMembershipsApi.md#coursescourseidusersuseridput) | **PUT** courses/{courseId}/users/{userId} | Create Membership
+*CourseMembershipsApi* | [**usersUserIdCoursesGet**](docs/Api/CourseMembershipsApi.md#usersuseridcoursesget) | **GET** users/{userId}/courses | Get Memberships
+*CoursesApi* | [**coursesCourseIdChildrenChildCourseIdGet**](docs/Api/CoursesApi.md#coursescourseidchildrenchildcourseidget) | **GET** courses/{courseId}/children/{childCourseId} | Get Child
+*CoursesApi* | [**coursesCourseIdChildrenGet**](docs/Api/CoursesApi.md#coursescourseidchildrenget) | **GET** courses/{courseId}/children | Get Children
+*CoursesApi* | [**coursesCourseIdDelete**](docs/Api/CoursesApi.md#coursescourseiddelete) | **DELETE** courses/{courseId} | Delete Course
+*CoursesApi* | [**coursesCourseIdGet**](docs/Api/CoursesApi.md#coursescourseidget) | **GET** courses/{courseId} | Get Course
+*CoursesApi* | [**coursesCourseIdPatch**](docs/Api/CoursesApi.md#coursescourseidpatch) | **PATCH** courses/{courseId} | Update Course
+*CoursesApi* | [**coursesGet**](docs/Api/CoursesApi.md#coursesget) | **GET** courses | Get Courses
+*CoursesApi* | [**coursesPost**](docs/Api/CoursesApi.md#coursespost) | **POST** courses | Create Course
+*DataSourcesApi* | [**dataSourcesDataSourceIdDelete**](docs/Api/DataSourcesApi.md#datasourcesdatasourceiddelete) | **DELETE** dataSources/{dataSourceId} | Delete Data Source
+*DataSourcesApi* | [**dataSourcesDataSourceIdGet**](docs/Api/DataSourcesApi.md#datasourcesdatasourceidget) | **GET** dataSources/{dataSourceId} | Get Data Source
+*DataSourcesApi* | [**dataSourcesDataSourceIdPatch**](docs/Api/DataSourcesApi.md#datasourcesdatasourceidpatch) | **PATCH** dataSources/{dataSourceId} | Update Data Source
+*DataSourcesApi* | [**dataSourcesGet**](docs/Api/DataSourcesApi.md#datasourcesget) | **GET** dataSources | Get Data Sources
+*DataSourcesApi* | [**dataSourcesPost**](docs/Api/DataSourcesApi.md#datasourcespost) | **POST** dataSources | Create Data Source
+*OauthApi* | [**oauth2TokenPost**](docs/Api/OauthApi.md#oauth2tokenpost) | **POST** oauth2/token | Request Token
+*SystemApi* | [**systemVersionGet**](docs/Api/SystemApi.md#systemversionget) | **GET** system/version | Get Version
+*TermsApi* | [**termsGet**](docs/Api/TermsApi.md#termsget) | **GET** terms | Get Terms
+*TermsApi* | [**termsPost**](docs/Api/TermsApi.md#termspost) | **POST** terms | Create Term
+*TermsApi* | [**termsTermIdDelete**](docs/Api/TermsApi.md#termstermiddelete) | **DELETE** terms/{termId} | Delete Term
+*TermsApi* | [**termsTermIdGet**](docs/Api/TermsApi.md#termstermidget) | **GET** terms/{termId} | Get Term
+*TermsApi* | [**termsTermIdPatch**](docs/Api/TermsApi.md#termstermidpatch) | **PATCH** terms/{termId} | Update Term
+*UsersApi* | [**usersGet**](docs/Api/UsersApi.md#usersget) | **GET** users | Get Users
+*UsersApi* | [**usersPost**](docs/Api/UsersApi.md#userspost) | **POST** users | Create User
+*UsersApi* | [**usersUserIdDelete**](docs/Api/UsersApi.md#usersuseriddelete) | **DELETE** users/{userId} | Delete User
+*UsersApi* | [**usersUserIdGet**](docs/Api/UsersApi.md#usersuseridget) | **GET** users/{userId} | Get User
+*UsersApi* | [**usersUserIdPatch**](docs/Api/UsersApi.md#usersuseridpatch) | **PATCH** users/{userId} | Update User
 
 
 ## Documentation For Models

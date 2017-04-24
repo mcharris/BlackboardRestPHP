@@ -88,7 +88,7 @@ class CourseGradesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet
+     * Operation coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet
      *
      * Get Column Attempt
      *
@@ -99,14 +99,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Attempt
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet($course_id, $column_id, $attempt_id, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet($course_id, $column_id, $attempt_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGetWithHttpInfo($course_id, $column_id, $attempt_id, $fields);
+        list($response) = $this->coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGetWithHttpInfo($course_id, $column_id, $attempt_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGetWithHttpInfo
+     * Operation coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGetWithHttpInfo
      *
      * Get Column Attempt
      *
@@ -117,22 +117,22 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Attempt, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGetWithHttpInfo($course_id, $column_id, $attempt_id, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGetWithHttpInfo($course_id, $column_id, $attempt_id, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet');
         }
         // verify the required parameter 'column_id' is set
         if ($column_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet');
         }
         // verify the required parameter 'attempt_id' is set
         if ($attempt_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $attempt_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $attempt_id when calling coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/attempts/{attemptId}";
+        $resourcePath = "courses/{courseId}/gradebook/columns/{columnId}/attempts/{attemptId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -195,7 +195,7 @@ class CourseGradesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Attempt',
-                '/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/attempts/{attemptId}'
+                'courses/{courseId}/gradebook/columns/{columnId}/attempts/{attemptId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Attempt', $httpHeader), $statusCode, $httpHeader];
@@ -220,7 +220,7 @@ class CourseGradesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet
+     * Operation coursesCourseIdGradebookColumnsColumnIdAttemptsGet
      *
      * Get Column Attempts
      *
@@ -234,14 +234,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse20010
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet($course_id, $column_id, $offset = null, $limit = null, $user_id = null, $attempt_statuses = null, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdAttemptsGet($course_id, $column_id, $offset = null, $limit = null, $user_id = null, $attempt_statuses = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGetWithHttpInfo($course_id, $column_id, $offset, $limit, $user_id, $attempt_statuses, $fields);
+        list($response) = $this->coursesCourseIdGradebookColumnsColumnIdAttemptsGetWithHttpInfo($course_id, $column_id, $offset, $limit, $user_id, $attempt_statuses, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGetWithHttpInfo
+     * Operation coursesCourseIdGradebookColumnsColumnIdAttemptsGetWithHttpInfo
      *
      * Get Column Attempts
      *
@@ -255,18 +255,18 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse20010, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGetWithHttpInfo($course_id, $column_id, $offset = null, $limit = null, $user_id = null, $attempt_statuses = null, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdAttemptsGetWithHttpInfo($course_id, $column_id, $offset = null, $limit = null, $user_id = null, $attempt_statuses = null, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGradebookColumnsColumnIdAttemptsGet');
         }
         // verify the required parameter 'column_id' is set
         if ($column_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet');
+            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling coursesCourseIdGradebookColumnsColumnIdAttemptsGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/attempts";
+        $resourcePath = "courses/{courseId}/gradebook/columns/{columnId}/attempts";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -337,7 +337,7 @@ class CourseGradesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse20010',
-                '/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/attempts'
+                'courses/{courseId}/gradebook/columns/{columnId}/attempts'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse20010', $httpHeader), $statusCode, $httpHeader];
@@ -366,7 +366,7 @@ class CourseGradesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete
+     * Operation coursesCourseIdGradebookColumnsColumnIdDelete
      *
      * Delete Grade Column
      *
@@ -376,14 +376,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return void
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete($course_id, $column_id, $only_if_empty = null)
+    public function coursesCourseIdGradebookColumnsColumnIdDelete($course_id, $column_id, $only_if_empty = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDeleteWithHttpInfo($course_id, $column_id, $only_if_empty);
+        list($response) = $this->coursesCourseIdGradebookColumnsColumnIdDeleteWithHttpInfo($course_id, $column_id, $only_if_empty);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDeleteWithHttpInfo
+     * Operation coursesCourseIdGradebookColumnsColumnIdDeleteWithHttpInfo
      *
      * Delete Grade Column
      *
@@ -393,18 +393,18 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDeleteWithHttpInfo($course_id, $column_id, $only_if_empty = null)
+    public function coursesCourseIdGradebookColumnsColumnIdDeleteWithHttpInfo($course_id, $column_id, $only_if_empty = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGradebookColumnsColumnIdDelete');
         }
         // verify the required parameter 'column_id' is set
         if ($column_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling coursesCourseIdGradebookColumnsColumnIdDelete');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}";
+        $resourcePath = "courses/{courseId}/gradebook/columns/{columnId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -459,7 +459,7 @@ class CourseGradesApi
                 $httpBody,
                 $headerParams,
                 null,
-                '/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}'
+                'courses/{courseId}/gradebook/columns/{columnId}'
             );
 
             return [null, $statusCode, $httpHeader];
@@ -488,7 +488,7 @@ class CourseGradesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet
+     * Operation coursesCourseIdGradebookColumnsColumnIdGet
      *
      * Get Grade Column
      *
@@ -498,14 +498,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\GradeColumn
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet($course_id, $column_id, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdGet($course_id, $column_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGetWithHttpInfo($course_id, $column_id, $fields);
+        list($response) = $this->coursesCourseIdGradebookColumnsColumnIdGetWithHttpInfo($course_id, $column_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGetWithHttpInfo
+     * Operation coursesCourseIdGradebookColumnsColumnIdGetWithHttpInfo
      *
      * Get Grade Column
      *
@@ -515,18 +515,18 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\GradeColumn, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGetWithHttpInfo($course_id, $column_id, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdGetWithHttpInfo($course_id, $column_id, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGradebookColumnsColumnIdGet');
         }
         // verify the required parameter 'column_id' is set
         if ($column_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling coursesCourseIdGradebookColumnsColumnIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}";
+        $resourcePath = "courses/{courseId}/gradebook/columns/{columnId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -581,7 +581,7 @@ class CourseGradesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\GradeColumn',
-                '/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}'
+                'courses/{courseId}/gradebook/columns/{columnId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\GradeColumn', $httpHeader), $statusCode, $httpHeader];
@@ -610,7 +610,7 @@ class CourseGradesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch
+     * Operation coursesCourseIdGradebookColumnsColumnIdPatch
      *
      * Update Grade Column
      *
@@ -621,14 +621,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\GradeColumn
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch($course_id, $column_id, $input, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdPatch($course_id, $column_id, $input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatchWithHttpInfo($course_id, $column_id, $input, $fields);
+        list($response) = $this->coursesCourseIdGradebookColumnsColumnIdPatchWithHttpInfo($course_id, $column_id, $input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatchWithHttpInfo
+     * Operation coursesCourseIdGradebookColumnsColumnIdPatchWithHttpInfo
      *
      * Update Grade Column
      *
@@ -639,22 +639,22 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\GradeColumn, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatchWithHttpInfo($course_id, $column_id, $input, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdPatchWithHttpInfo($course_id, $column_id, $input, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGradebookColumnsColumnIdPatch');
         }
         // verify the required parameter 'column_id' is set
         if ($column_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling coursesCourseIdGradebookColumnsColumnIdPatch');
         }
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling coursesCourseIdGradebookColumnsColumnIdPatch');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}";
+        $resourcePath = "courses/{courseId}/gradebook/columns/{columnId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -714,7 +714,7 @@ class CourseGradesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\GradeColumn',
-                '/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}'
+                'courses/{courseId}/gradebook/columns/{columnId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\GradeColumn', $httpHeader), $statusCode, $httpHeader];
@@ -743,7 +743,7 @@ class CourseGradesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet
+     * Operation coursesCourseIdGradebookColumnsColumnIdUsersGet
      *
      * Get Column Grades
      *
@@ -755,14 +755,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse20011
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet($course_id, $column_id, $offset = null, $limit = null, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdUsersGet($course_id, $column_id, $offset = null, $limit = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGetWithHttpInfo($course_id, $column_id, $offset, $limit, $fields);
+        list($response) = $this->coursesCourseIdGradebookColumnsColumnIdUsersGetWithHttpInfo($course_id, $column_id, $offset, $limit, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGetWithHttpInfo
+     * Operation coursesCourseIdGradebookColumnsColumnIdUsersGetWithHttpInfo
      *
      * Get Column Grades
      *
@@ -774,18 +774,18 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse20011, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGetWithHttpInfo($course_id, $column_id, $offset = null, $limit = null, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdUsersGetWithHttpInfo($course_id, $column_id, $offset = null, $limit = null, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGradebookColumnsColumnIdUsersGet');
         }
         // verify the required parameter 'column_id' is set
         if ($column_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet');
+            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling coursesCourseIdGradebookColumnsColumnIdUsersGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users";
+        $resourcePath = "courses/{courseId}/gradebook/columns/{columnId}/users";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -848,7 +848,7 @@ class CourseGradesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse20011',
-                '/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users'
+                'courses/{courseId}/gradebook/columns/{columnId}/users'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse20011', $httpHeader), $statusCode, $httpHeader];
@@ -873,7 +873,7 @@ class CourseGradesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet
+     * Operation coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet
      *
      * Get Column Grade
      *
@@ -884,14 +884,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Grade
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet($course_id, $column_id, $user_id, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet($course_id, $column_id, $user_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGetWithHttpInfo($course_id, $column_id, $user_id, $fields);
+        list($response) = $this->coursesCourseIdGradebookColumnsColumnIdUsersUserIdGetWithHttpInfo($course_id, $column_id, $user_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGetWithHttpInfo
+     * Operation coursesCourseIdGradebookColumnsColumnIdUsersUserIdGetWithHttpInfo
      *
      * Get Column Grade
      *
@@ -902,22 +902,22 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Grade, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGetWithHttpInfo($course_id, $column_id, $user_id, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdUsersUserIdGetWithHttpInfo($course_id, $column_id, $user_id, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet');
         }
         // verify the required parameter 'column_id' is set
         if ($column_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet');
         }
         // verify the required parameter 'user_id' is set
         if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users/{userId}";
+        $resourcePath = "courses/{courseId}/gradebook/columns/{columnId}/users/{userId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -980,7 +980,7 @@ class CourseGradesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Grade',
-                '/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users/{userId}'
+                'courses/{courseId}/gradebook/columns/{columnId}/users/{userId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Grade', $httpHeader), $statusCode, $httpHeader];
@@ -1009,7 +1009,7 @@ class CourseGradesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch
+     * Operation coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch
      *
      * Update Column Grade
      *
@@ -1021,14 +1021,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Grade
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch($course_id, $column_id, $user_id, $input, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch($course_id, $column_id, $user_id, $input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatchWithHttpInfo($course_id, $column_id, $user_id, $input, $fields);
+        list($response) = $this->coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatchWithHttpInfo($course_id, $column_id, $user_id, $input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatchWithHttpInfo
+     * Operation coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatchWithHttpInfo
      *
      * Update Column Grade
      *
@@ -1040,26 +1040,26 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Grade, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatchWithHttpInfo($course_id, $column_id, $user_id, $input, $fields = null)
+    public function coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatchWithHttpInfo($course_id, $column_id, $user_id, $input, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch');
         }
         // verify the required parameter 'column_id' is set
         if ($column_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $column_id when calling coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch');
         }
         // verify the required parameter 'user_id' is set
         if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch');
         }
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users/{userId}";
+        $resourcePath = "courses/{courseId}/gradebook/columns/{columnId}/users/{userId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -1127,7 +1127,7 @@ class CourseGradesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Grade',
-                '/learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users/{userId}'
+                'courses/{courseId}/gradebook/columns/{columnId}/users/{userId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Grade', $httpHeader), $statusCode, $httpHeader];
@@ -1156,7 +1156,7 @@ class CourseGradesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsGet
+     * Operation coursesCourseIdGradebookColumnsGet
      *
      * Get Grade Columns
      *
@@ -1168,14 +1168,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse2009
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsGet($course_id, $offset = null, $limit = null, $content_id = null, $fields = null)
+    public function coursesCourseIdGradebookColumnsGet($course_id, $offset = null, $limit = null, $content_id = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGradebookColumnsGetWithHttpInfo($course_id, $offset, $limit, $content_id, $fields);
+        list($response) = $this->coursesCourseIdGradebookColumnsGetWithHttpInfo($course_id, $offset, $limit, $content_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsGetWithHttpInfo
+     * Operation coursesCourseIdGradebookColumnsGetWithHttpInfo
      *
      * Get Grade Columns
      *
@@ -1187,14 +1187,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse2009, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsGetWithHttpInfo($course_id, $offset = null, $limit = null, $content_id = null, $fields = null)
+    public function coursesCourseIdGradebookColumnsGetWithHttpInfo($course_id, $offset = null, $limit = null, $content_id = null, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGradebookColumnsGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/gradebook/columns";
+        $resourcePath = "courses/{courseId}/gradebook/columns";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -1253,7 +1253,7 @@ class CourseGradesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse2009',
-                '/learn/api/public/v1/courses/{courseId}/gradebook/columns'
+                'courses/{courseId}/gradebook/columns'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse2009', $httpHeader), $statusCode, $httpHeader];
@@ -1282,7 +1282,7 @@ class CourseGradesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsPost
+     * Operation coursesCourseIdGradebookColumnsPost
      *
      * Create Grade Column
      *
@@ -1292,14 +1292,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\GradeColumn
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsPost($course_id, $input, $fields = null)
+    public function coursesCourseIdGradebookColumnsPost($course_id, $input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGradebookColumnsPostWithHttpInfo($course_id, $input, $fields);
+        list($response) = $this->coursesCourseIdGradebookColumnsPostWithHttpInfo($course_id, $input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookColumnsPostWithHttpInfo
+     * Operation coursesCourseIdGradebookColumnsPostWithHttpInfo
      *
      * Create Grade Column
      *
@@ -1309,18 +1309,18 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\GradeColumn, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookColumnsPostWithHttpInfo($course_id, $input, $fields = null)
+    public function coursesCourseIdGradebookColumnsPostWithHttpInfo($course_id, $input, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGradebookColumnsPost');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGradebookColumnsPost');
         }
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1CoursesCourseIdGradebookColumnsPost');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling coursesCourseIdGradebookColumnsPost');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/gradebook/columns";
+        $resourcePath = "courses/{courseId}/gradebook/columns";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -1372,7 +1372,7 @@ class CourseGradesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\GradeColumn',
-                '/learn/api/public/v1/courses/{courseId}/gradebook/columns'
+                'courses/{courseId}/gradebook/columns'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\GradeColumn', $httpHeader), $statusCode, $httpHeader];
@@ -1393,7 +1393,7 @@ class CourseGradesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet
+     * Operation coursesCourseIdGradebookUsersUserIdGet
      *
      * Get User Grades
      *
@@ -1405,14 +1405,14 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse20011
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet($course_id, $user_id, $offset = null, $limit = null, $fields = null)
+    public function coursesCourseIdGradebookUsersUserIdGet($course_id, $user_id, $offset = null, $limit = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGetWithHttpInfo($course_id, $user_id, $offset, $limit, $fields);
+        list($response) = $this->coursesCourseIdGradebookUsersUserIdGetWithHttpInfo($course_id, $user_id, $offset, $limit, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGetWithHttpInfo
+     * Operation coursesCourseIdGradebookUsersUserIdGetWithHttpInfo
      *
      * Get User Grades
      *
@@ -1424,18 +1424,18 @@ class CourseGradesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse20011, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGetWithHttpInfo($course_id, $user_id, $offset = null, $limit = null, $fields = null)
+    public function coursesCourseIdGradebookUsersUserIdGetWithHttpInfo($course_id, $user_id, $offset = null, $limit = null, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGradebookUsersUserIdGet');
         }
         // verify the required parameter 'user_id' is set
         if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling coursesCourseIdGradebookUsersUserIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/gradebook/users/{userId}";
+        $resourcePath = "courses/{courseId}/gradebook/users/{userId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -1498,7 +1498,7 @@ class CourseGradesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse20011',
-                '/learn/api/public/v1/courses/{courseId}/gradebook/users/{userId}'
+                'courses/{courseId}/gradebook/users/{userId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse20011', $httpHeader), $statusCode, $httpHeader];

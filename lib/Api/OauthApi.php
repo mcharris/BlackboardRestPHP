@@ -88,7 +88,7 @@ class OauthApi
     }
 
     /**
-     * Operation learnApiPublicV1Oauth2TokenPost
+     * Operation oauth2TokenPost
      *
      * Request Token
      *
@@ -96,14 +96,14 @@ class OauthApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\OAuth2AccessToken
      */
-    public function learnApiPublicV1Oauth2TokenPost($grant_type)
+    public function oauth2TokenPost($grant_type)
     {
-        list($response) = $this->learnApiPublicV1Oauth2TokenPostWithHttpInfo($grant_type);
+        list($response) = $this->oauth2TokenPostWithHttpInfo($grant_type);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1Oauth2TokenPostWithHttpInfo
+     * Operation oauth2TokenPostWithHttpInfo
      *
      * Request Token
      *
@@ -111,14 +111,14 @@ class OauthApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\OAuth2AccessToken, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1Oauth2TokenPostWithHttpInfo($grant_type)
+    public function oauth2TokenPostWithHttpInfo($grant_type)
     {
         // verify the required parameter 'grant_type' is set
         if ($grant_type === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $grant_type when calling learnApiPublicV1Oauth2TokenPost');
+            throw new \InvalidArgumentException('Missing the required parameter $grant_type when calling oauth2TokenPost');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/oauth2/token";
+        $resourcePath = "oauth2/token";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -156,7 +156,7 @@ class OauthApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\OAuth2AccessToken',
-                '/learn/api/public/v1/oauth2/token'
+                'oauth2/token'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\OAuth2AccessToken', $httpHeader), $statusCode, $httpHeader];

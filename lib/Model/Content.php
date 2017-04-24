@@ -423,7 +423,7 @@ class Content implements ArrayAccess
 
     /**
      * Sets has_gradebook_columns
-     * @param bool $has_gradebook_columns Indicates whether this content item has one or more gradebook columns.  Associated gradebook columns can be accessed via /learn/api/public/v1/courses/$courseId/gradebook/columns?contentId=$contentId  **Since**: 3000.11.0
+     * @param bool $has_gradebook_columns Indicates whether this content item has one or more gradebook columns.  Associated gradebook columns can be accessed via courses/$courseId/gradebook/columns?contentId=$contentId  **Since**: 3000.11.0
      * @return $this
      */
     public function setHasGradebookColumns($has_gradebook_columns)
@@ -444,7 +444,7 @@ class Content implements ArrayAccess
 
     /**
      * Sets has_associated_groups
-     * @param bool $has_associated_groups Indicates whether this content item has one or more associated groups.  Associated groups can be accessed via /learn/api/public/v1/courses/$courseId/contents/$contentId/groups  **Since**: 3100.4.0
+     * @param bool $has_associated_groups Indicates whether this content item has one or more associated groups.  Associated groups can be accessed via courses/$courseId/contents/$contentId/groups  **Since**: 3100.4.0
      * @return $this
      */
     public function setHasAssociatedGroups($has_associated_groups)

@@ -77,12 +77,12 @@ class SystemApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1SystemVersionGet
+     * Test case for systemVersionGet
      *
      * Get Version.
      *
      */
-    public function testLearnApiPublicV1SystemVersionGet()
+    public function testSystemVersionGet()
     {
 
     }

@@ -88,7 +88,7 @@ class TermsApi
     }
 
     /**
-     * Operation learnApiPublicV1TermsGet
+     * Operation termsGet
      *
      * Get Terms
      *
@@ -100,14 +100,14 @@ class TermsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse2007
      */
-    public function learnApiPublicV1TermsGet($offset = null, $limit = null, $external_id = null, $data_source_id = null, $fields = null)
+    public function termsGet($offset = null, $limit = null, $external_id = null, $data_source_id = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1TermsGetWithHttpInfo($offset, $limit, $external_id, $data_source_id, $fields);
+        list($response) = $this->termsGetWithHttpInfo($offset, $limit, $external_id, $data_source_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1TermsGetWithHttpInfo
+     * Operation termsGetWithHttpInfo
      *
      * Get Terms
      *
@@ -119,10 +119,10 @@ class TermsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse2007, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1TermsGetWithHttpInfo($offset = null, $limit = null, $external_id = null, $data_source_id = null, $fields = null)
+    public function termsGetWithHttpInfo($offset = null, $limit = null, $external_id = null, $data_source_id = null, $fields = null)
     {
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/terms";
+        $resourcePath = "terms";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -177,7 +177,7 @@ class TermsApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse2007',
-                '/learn/api/public/v1/terms'
+                'terms'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse2007', $httpHeader), $statusCode, $httpHeader];
@@ -198,7 +198,7 @@ class TermsApi
     }
 
     /**
-     * Operation learnApiPublicV1TermsPost
+     * Operation termsPost
      *
      * Create Term
      *
@@ -207,14 +207,14 @@ class TermsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Term
      */
-    public function learnApiPublicV1TermsPost($input, $fields = null)
+    public function termsPost($input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1TermsPostWithHttpInfo($input, $fields);
+        list($response) = $this->termsPostWithHttpInfo($input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1TermsPostWithHttpInfo
+     * Operation termsPostWithHttpInfo
      *
      * Create Term
      *
@@ -223,14 +223,14 @@ class TermsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Term, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1TermsPostWithHttpInfo($input, $fields = null)
+    public function termsPostWithHttpInfo($input, $fields = null)
     {
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1TermsPost');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling termsPost');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/terms";
+        $resourcePath = "terms";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -274,7 +274,7 @@ class TermsApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Term',
-                '/learn/api/public/v1/terms'
+                'terms'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Term', $httpHeader), $statusCode, $httpHeader];
@@ -303,7 +303,7 @@ class TermsApi
     }
 
     /**
-     * Operation learnApiPublicV1TermsTermIdDelete
+     * Operation termsTermIdDelete
      *
      * Delete Term
      *
@@ -311,14 +311,14 @@ class TermsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return void
      */
-    public function learnApiPublicV1TermsTermIdDelete($term_id)
+    public function termsTermIdDelete($term_id)
     {
-        list($response) = $this->learnApiPublicV1TermsTermIdDeleteWithHttpInfo($term_id);
+        list($response) = $this->termsTermIdDeleteWithHttpInfo($term_id);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1TermsTermIdDeleteWithHttpInfo
+     * Operation termsTermIdDeleteWithHttpInfo
      *
      * Delete Term
      *
@@ -326,14 +326,14 @@ class TermsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1TermsTermIdDeleteWithHttpInfo($term_id)
+    public function termsTermIdDeleteWithHttpInfo($term_id)
     {
         // verify the required parameter 'term_id' is set
         if ($term_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $term_id when calling learnApiPublicV1TermsTermIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $term_id when calling termsTermIdDelete');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/terms/{termId}";
+        $resourcePath = "terms/{termId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -376,7 +376,7 @@ class TermsApi
                 $httpBody,
                 $headerParams,
                 null,
-                '/learn/api/public/v1/terms/{termId}'
+                'terms/{termId}'
             );
 
             return [null, $statusCode, $httpHeader];
@@ -401,7 +401,7 @@ class TermsApi
     }
 
     /**
-     * Operation learnApiPublicV1TermsTermIdGet
+     * Operation termsTermIdGet
      *
      * Get Term
      *
@@ -410,14 +410,14 @@ class TermsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Term
      */
-    public function learnApiPublicV1TermsTermIdGet($term_id, $fields = null)
+    public function termsTermIdGet($term_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1TermsTermIdGetWithHttpInfo($term_id, $fields);
+        list($response) = $this->termsTermIdGetWithHttpInfo($term_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1TermsTermIdGetWithHttpInfo
+     * Operation termsTermIdGetWithHttpInfo
      *
      * Get Term
      *
@@ -426,14 +426,14 @@ class TermsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Term, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1TermsTermIdGetWithHttpInfo($term_id, $fields = null)
+    public function termsTermIdGetWithHttpInfo($term_id, $fields = null)
     {
         // verify the required parameter 'term_id' is set
         if ($term_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $term_id when calling learnApiPublicV1TermsTermIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $term_id when calling termsTermIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/terms/{termId}";
+        $resourcePath = "terms/{termId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -480,7 +480,7 @@ class TermsApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Term',
-                '/learn/api/public/v1/terms/{termId}'
+                'terms/{termId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Term', $httpHeader), $statusCode, $httpHeader];
@@ -509,7 +509,7 @@ class TermsApi
     }
 
     /**
-     * Operation learnApiPublicV1TermsTermIdPatch
+     * Operation termsTermIdPatch
      *
      * Update Term
      *
@@ -519,14 +519,14 @@ class TermsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Term
      */
-    public function learnApiPublicV1TermsTermIdPatch($term_id, $input, $fields = null)
+    public function termsTermIdPatch($term_id, $input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1TermsTermIdPatchWithHttpInfo($term_id, $input, $fields);
+        list($response) = $this->termsTermIdPatchWithHttpInfo($term_id, $input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1TermsTermIdPatchWithHttpInfo
+     * Operation termsTermIdPatchWithHttpInfo
      *
      * Update Term
      *
@@ -536,18 +536,18 @@ class TermsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Term, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1TermsTermIdPatchWithHttpInfo($term_id, $input, $fields = null)
+    public function termsTermIdPatchWithHttpInfo($term_id, $input, $fields = null)
     {
         // verify the required parameter 'term_id' is set
         if ($term_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $term_id when calling learnApiPublicV1TermsTermIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $term_id when calling termsTermIdPatch');
         }
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1TermsTermIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling termsTermIdPatch');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/terms/{termId}";
+        $resourcePath = "terms/{termId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -599,7 +599,7 @@ class TermsApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Term',
-                '/learn/api/public/v1/terms/{termId}'
+                'terms/{termId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Term', $httpHeader), $statusCode, $httpHeader];

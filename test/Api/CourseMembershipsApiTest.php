@@ -77,67 +77,67 @@ class CourseMembershipsApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdUsersGet
+     * Test case for coursesCourseIdUsersGet
      *
      * Get Memberships.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdUsersGet()
+    public function testCoursesCourseIdUsersGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdUsersUserIdDelete
+     * Test case for coursesCourseIdUsersUserIdDelete
      *
      * Delete Membership.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdUsersUserIdDelete()
+    public function testCoursesCourseIdUsersUserIdDelete()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdUsersUserIdGet
+     * Test case for coursesCourseIdUsersUserIdGet
      *
      * Get Membership.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdUsersUserIdGet()
+    public function testCoursesCourseIdUsersUserIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdUsersUserIdPatch
+     * Test case for coursesCourseIdUsersUserIdPatch
      *
      * Update Membership.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdUsersUserIdPatch()
+    public function testCoursesCourseIdUsersUserIdPatch()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdUsersUserIdPut
+     * Test case for coursesCourseIdUsersUserIdPut
      *
      * Create Membership.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdUsersUserIdPut()
+    public function testCoursesCourseIdUsersUserIdPut()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1UsersUserIdCoursesGet
+     * Test case for usersUserIdCoursesGet
      *
      * Get Memberships.
      *
      */
-    public function testLearnApiPublicV1UsersUserIdCoursesGet()
+    public function testUsersUserIdCoursesGet()
     {
 
     }

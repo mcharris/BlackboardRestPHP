@@ -88,7 +88,7 @@ class ContentGroupAssignmentsApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet
+     * Operation coursesCourseIdContentsContentIdGroupsGet
      *
      * Get Content Groups
      *
@@ -100,14 +100,14 @@ class ContentGroupAssignmentsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse2004
      */
-    public function learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet($course_id, $content_id, $offset = null, $limit = null, $fields = null)
+    public function coursesCourseIdContentsContentIdGroupsGet($course_id, $content_id, $offset = null, $limit = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGetWithHttpInfo($course_id, $content_id, $offset, $limit, $fields);
+        list($response) = $this->coursesCourseIdContentsContentIdGroupsGetWithHttpInfo($course_id, $content_id, $offset, $limit, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGetWithHttpInfo
+     * Operation coursesCourseIdContentsContentIdGroupsGetWithHttpInfo
      *
      * Get Content Groups
      *
@@ -119,18 +119,18 @@ class ContentGroupAssignmentsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse2004, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGetWithHttpInfo($course_id, $content_id, $offset = null, $limit = null, $fields = null)
+    public function coursesCourseIdContentsContentIdGroupsGetWithHttpInfo($course_id, $content_id, $offset = null, $limit = null, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdContentsContentIdGroupsGet');
         }
         // verify the required parameter 'content_id' is set
         if ($content_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $content_id when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet');
+            throw new \InvalidArgumentException('Missing the required parameter $content_id when calling coursesCourseIdContentsContentIdGroupsGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups";
+        $resourcePath = "courses/{courseId}/contents/{contentId}/groups";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -193,7 +193,7 @@ class ContentGroupAssignmentsApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse2004',
-                '/learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups'
+                'courses/{courseId}/contents/{contentId}/groups'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse2004', $httpHeader), $statusCode, $httpHeader];
@@ -218,7 +218,7 @@ class ContentGroupAssignmentsApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete
+     * Operation coursesCourseIdContentsContentIdGroupsGroupIdDelete
      *
      * Delete Content Group
      *
@@ -228,14 +228,14 @@ class ContentGroupAssignmentsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return void
      */
-    public function learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete($course_id, $content_id, $group_id)
+    public function coursesCourseIdContentsContentIdGroupsGroupIdDelete($course_id, $content_id, $group_id)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDeleteWithHttpInfo($course_id, $content_id, $group_id);
+        list($response) = $this->coursesCourseIdContentsContentIdGroupsGroupIdDeleteWithHttpInfo($course_id, $content_id, $group_id);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDeleteWithHttpInfo
+     * Operation coursesCourseIdContentsContentIdGroupsGroupIdDeleteWithHttpInfo
      *
      * Delete Content Group
      *
@@ -245,22 +245,22 @@ class ContentGroupAssignmentsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDeleteWithHttpInfo($course_id, $content_id, $group_id)
+    public function coursesCourseIdContentsContentIdGroupsGroupIdDeleteWithHttpInfo($course_id, $content_id, $group_id)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdContentsContentIdGroupsGroupIdDelete');
         }
         // verify the required parameter 'content_id' is set
         if ($content_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $content_id when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $content_id when calling coursesCourseIdContentsContentIdGroupsGroupIdDelete');
         }
         // verify the required parameter 'group_id' is set
         if ($group_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling coursesCourseIdContentsContentIdGroupsGroupIdDelete');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId}";
+        $resourcePath = "courses/{courseId}/contents/{contentId}/groups/{groupId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -319,7 +319,7 @@ class ContentGroupAssignmentsApi
                 $httpBody,
                 $headerParams,
                 null,
-                '/learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId}'
+                'courses/{courseId}/contents/{contentId}/groups/{groupId}'
             );
 
             return [null, $statusCode, $httpHeader];
@@ -344,7 +344,7 @@ class ContentGroupAssignmentsApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet
+     * Operation coursesCourseIdContentsContentIdGroupsGroupIdGet
      *
      * Get Content Group
      *
@@ -355,14 +355,14 @@ class ContentGroupAssignmentsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\ContentGroup
      */
-    public function learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet($course_id, $content_id, $group_id, $fields = null)
+    public function coursesCourseIdContentsContentIdGroupsGroupIdGet($course_id, $content_id, $group_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGetWithHttpInfo($course_id, $content_id, $group_id, $fields);
+        list($response) = $this->coursesCourseIdContentsContentIdGroupsGroupIdGetWithHttpInfo($course_id, $content_id, $group_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGetWithHttpInfo
+     * Operation coursesCourseIdContentsContentIdGroupsGroupIdGetWithHttpInfo
      *
      * Get Content Group
      *
@@ -373,22 +373,22 @@ class ContentGroupAssignmentsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\ContentGroup, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGetWithHttpInfo($course_id, $content_id, $group_id, $fields = null)
+    public function coursesCourseIdContentsContentIdGroupsGroupIdGetWithHttpInfo($course_id, $content_id, $group_id, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdContentsContentIdGroupsGroupIdGet');
         }
         // verify the required parameter 'content_id' is set
         if ($content_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $content_id when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $content_id when calling coursesCourseIdContentsContentIdGroupsGroupIdGet');
         }
         // verify the required parameter 'group_id' is set
         if ($group_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling coursesCourseIdContentsContentIdGroupsGroupIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId}";
+        $resourcePath = "courses/{courseId}/contents/{contentId}/groups/{groupId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -451,7 +451,7 @@ class ContentGroupAssignmentsApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\ContentGroup',
-                '/learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId}'
+                'courses/{courseId}/contents/{contentId}/groups/{groupId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\ContentGroup', $httpHeader), $statusCode, $httpHeader];
@@ -480,7 +480,7 @@ class ContentGroupAssignmentsApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut
+     * Operation coursesCourseIdContentsContentIdGroupsGroupIdPut
      *
      * Create Content Group
      *
@@ -492,14 +492,14 @@ class ContentGroupAssignmentsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\ContentGroup
      */
-    public function learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut($course_id, $content_id, $group_id, $input, $fields = null)
+    public function coursesCourseIdContentsContentIdGroupsGroupIdPut($course_id, $content_id, $group_id, $input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPutWithHttpInfo($course_id, $content_id, $group_id, $input, $fields);
+        list($response) = $this->coursesCourseIdContentsContentIdGroupsGroupIdPutWithHttpInfo($course_id, $content_id, $group_id, $input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPutWithHttpInfo
+     * Operation coursesCourseIdContentsContentIdGroupsGroupIdPutWithHttpInfo
      *
      * Create Content Group
      *
@@ -511,26 +511,26 @@ class ContentGroupAssignmentsApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\ContentGroup, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPutWithHttpInfo($course_id, $content_id, $group_id, $input, $fields = null)
+    public function coursesCourseIdContentsContentIdGroupsGroupIdPutWithHttpInfo($course_id, $content_id, $group_id, $input, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdContentsContentIdGroupsGroupIdPut');
         }
         // verify the required parameter 'content_id' is set
         if ($content_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $content_id when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut');
+            throw new \InvalidArgumentException('Missing the required parameter $content_id when calling coursesCourseIdContentsContentIdGroupsGroupIdPut');
         }
         // verify the required parameter 'group_id' is set
         if ($group_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut');
+            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling coursesCourseIdContentsContentIdGroupsGroupIdPut');
         }
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling coursesCourseIdContentsContentIdGroupsGroupIdPut');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId}";
+        $resourcePath = "courses/{courseId}/contents/{contentId}/groups/{groupId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -598,7 +598,7 @@ class ContentGroupAssignmentsApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\ContentGroup',
-                '/learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId}'
+                'courses/{courseId}/contents/{contentId}/groups/{groupId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\ContentGroup', $httpHeader), $statusCode, $httpHeader];

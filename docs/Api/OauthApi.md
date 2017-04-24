@@ -1,14 +1,14 @@
 # BlackboardRest\OauthApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1Oauth2TokenPost**](OauthApi.md#learnApiPublicV1Oauth2TokenPost) | **POST** /learn/api/public/v1/oauth2/token | Request Token
+[**oauth2TokenPost**](OauthApi.md#oauth2TokenPost) | **POST** oauth2/token | Request Token
 
 
-# **learnApiPublicV1Oauth2TokenPost**
-> \BlackboardRest\Model\OAuth2AccessToken learnApiPublicV1Oauth2TokenPost($grant_type)
+# **oauth2TokenPost**
+> \BlackboardRest\Model\OAuth2AccessToken oauth2TokenPost($grant_type)
 
 Request Token
 
@@ -27,10 +27,10 @@ $api_instance = new BlackboardRest\Api\OauthApi();
 $grant_type = "grant_type_example"; // string | Must be 'client_credentials'.
 
 try {
-    $result = $api_instance->learnApiPublicV1Oauth2TokenPost($grant_type);
+    $result = $api_instance->oauth2TokenPost($grant_type);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling OauthApi->learnApiPublicV1Oauth2TokenPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling OauthApi->oauth2TokenPost: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

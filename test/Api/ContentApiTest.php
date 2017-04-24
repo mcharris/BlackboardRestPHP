@@ -77,78 +77,78 @@ class ContentApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdContentsContentIdChildrenGet
+     * Test case for coursesCourseIdContentsContentIdChildrenGet
      *
      * Get Children.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdContentsContentIdChildrenGet()
+    public function testCoursesCourseIdContentsContentIdChildrenGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdContentsContentIdChildrenPost
+     * Test case for coursesCourseIdContentsContentIdChildrenPost
      *
      * Create Child.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdContentsContentIdChildrenPost()
+    public function testCoursesCourseIdContentsContentIdChildrenPost()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdContentsContentIdDelete
+     * Test case for coursesCourseIdContentsContentIdDelete
      *
      * Delete Content.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdContentsContentIdDelete()
+    public function testCoursesCourseIdContentsContentIdDelete()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdContentsContentIdGet
+     * Test case for coursesCourseIdContentsContentIdGet
      *
      * Get Content.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdContentsContentIdGet()
+    public function testCoursesCourseIdContentsContentIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdContentsContentIdPatch
+     * Test case for coursesCourseIdContentsContentIdPatch
      *
      * Update Content.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdContentsContentIdPatch()
+    public function testCoursesCourseIdContentsContentIdPatch()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdContentsGet
+     * Test case for coursesCourseIdContentsGet
      *
      * Get Contents.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdContentsGet()
+    public function testCoursesCourseIdContentsGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdContentsPost
+     * Test case for coursesCourseIdContentsPost
      *
      * Create Content.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdContentsPost()
+    public function testCoursesCourseIdContentsPost()
     {
 
     }

@@ -77,45 +77,45 @@ class CourseGroupUsersApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet
+     * Test case for coursesCourseIdGroupsGroupIdUsersGet
      *
      * Get Group Memberships.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet()
+    public function testCoursesCourseIdGroupsGroupIdUsersGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete
+     * Test case for coursesCourseIdGroupsGroupIdUsersUserIdDelete
      *
      * Delete Group Membership.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete()
+    public function testCoursesCourseIdGroupsGroupIdUsersUserIdDelete()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet
+     * Test case for coursesCourseIdGroupsGroupIdUsersUserIdGet
      *
      * Get Group Membership.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet()
+    public function testCoursesCourseIdGroupsGroupIdUsersUserIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut
+     * Test case for coursesCourseIdGroupsGroupIdUsersUserIdPut
      *
      * Put Group Membership.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut()
+    public function testCoursesCourseIdGroupsGroupIdUsersUserIdPut()
     {
 
     }

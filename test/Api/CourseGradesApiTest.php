@@ -77,122 +77,122 @@ class CourseGradesApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet
+     * Test case for coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet
      *
      * Get Column Attempt.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet()
+    public function testCoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet
+     * Test case for coursesCourseIdGradebookColumnsColumnIdAttemptsGet
      *
      * Get Column Attempts.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet()
+    public function testCoursesCourseIdGradebookColumnsColumnIdAttemptsGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete
+     * Test case for coursesCourseIdGradebookColumnsColumnIdDelete
      *
      * Delete Grade Column.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete()
+    public function testCoursesCourseIdGradebookColumnsColumnIdDelete()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet
+     * Test case for coursesCourseIdGradebookColumnsColumnIdGet
      *
      * Get Grade Column.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet()
+    public function testCoursesCourseIdGradebookColumnsColumnIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch
+     * Test case for coursesCourseIdGradebookColumnsColumnIdPatch
      *
      * Update Grade Column.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch()
+    public function testCoursesCourseIdGradebookColumnsColumnIdPatch()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet
+     * Test case for coursesCourseIdGradebookColumnsColumnIdUsersGet
      *
      * Get Column Grades.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet()
+    public function testCoursesCourseIdGradebookColumnsColumnIdUsersGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet
+     * Test case for coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet
      *
      * Get Column Grade.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet()
+    public function testCoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch
+     * Test case for coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch
      *
      * Update Column Grade.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch()
+    public function testCoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGradebookColumnsGet
+     * Test case for coursesCourseIdGradebookColumnsGet
      *
      * Get Grade Columns.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGradebookColumnsGet()
+    public function testCoursesCourseIdGradebookColumnsGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGradebookColumnsPost
+     * Test case for coursesCourseIdGradebookColumnsPost
      *
      * Create Grade Column.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGradebookColumnsPost()
+    public function testCoursesCourseIdGradebookColumnsPost()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet
+     * Test case for coursesCourseIdGradebookUsersUserIdGet
      *
      * Get User Grades.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet()
+    public function testCoursesCourseIdGradebookUsersUserIdGet()
     {
 
     }

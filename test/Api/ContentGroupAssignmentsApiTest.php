@@ -77,45 +77,45 @@ class ContentGroupAssignmentsApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet
+     * Test case for coursesCourseIdContentsContentIdGroupsGet
      *
      * Get Content Groups.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet()
+    public function testCoursesCourseIdContentsContentIdGroupsGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete
+     * Test case for coursesCourseIdContentsContentIdGroupsGroupIdDelete
      *
      * Delete Content Group.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete()
+    public function testCoursesCourseIdContentsContentIdGroupsGroupIdDelete()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet
+     * Test case for coursesCourseIdContentsContentIdGroupsGroupIdGet
      *
      * Get Content Group.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet()
+    public function testCoursesCourseIdContentsContentIdGroupsGroupIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut
+     * Test case for coursesCourseIdContentsContentIdGroupsGroupIdPut
      *
      * Create Content Group.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut()
+    public function testCoursesCourseIdContentsContentIdGroupsGroupIdPut()
     {
 
     }

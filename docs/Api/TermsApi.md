@@ -1,18 +1,18 @@
 # BlackboardRest\TermsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1TermsGet**](TermsApi.md#learnApiPublicV1TermsGet) | **GET** /learn/api/public/v1/terms | Get Terms
-[**learnApiPublicV1TermsPost**](TermsApi.md#learnApiPublicV1TermsPost) | **POST** /learn/api/public/v1/terms | Create Term
-[**learnApiPublicV1TermsTermIdDelete**](TermsApi.md#learnApiPublicV1TermsTermIdDelete) | **DELETE** /learn/api/public/v1/terms/{termId} | Delete Term
-[**learnApiPublicV1TermsTermIdGet**](TermsApi.md#learnApiPublicV1TermsTermIdGet) | **GET** /learn/api/public/v1/terms/{termId} | Get Term
-[**learnApiPublicV1TermsTermIdPatch**](TermsApi.md#learnApiPublicV1TermsTermIdPatch) | **PATCH** /learn/api/public/v1/terms/{termId} | Update Term
+[**termsGet**](TermsApi.md#termsGet) | **GET** terms | Get Terms
+[**termsPost**](TermsApi.md#termsPost) | **POST** terms | Create Term
+[**termsTermIdDelete**](TermsApi.md#termsTermIdDelete) | **DELETE** terms/{termId} | Delete Term
+[**termsTermIdGet**](TermsApi.md#termsTermIdGet) | **GET** terms/{termId} | Get Term
+[**termsTermIdPatch**](TermsApi.md#termsTermIdPatch) | **PATCH** terms/{termId} | Update Term
 
 
-# **learnApiPublicV1TermsGet**
-> \BlackboardRest\Model\InlineResponse2007 learnApiPublicV1TermsGet($offset, $limit, $external_id, $data_source_id, $fields)
+# **termsGet**
+> \BlackboardRest\Model\InlineResponse2007 termsGet($offset, $limit, $external_id, $data_source_id, $fields)
 
 Get Terms
 
@@ -36,10 +36,10 @@ $data_source_id = "data_source_id_example"; // string | Search for term with thi
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1TermsGet($offset, $limit, $external_id, $data_source_id, $fields);
+    $result = $api_instance->termsGet($offset, $limit, $external_id, $data_source_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling TermsApi->learnApiPublicV1TermsGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling TermsApi->termsGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -69,8 +69,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1TermsPost**
-> \BlackboardRest\Model\Term learnApiPublicV1TermsPost($input, $fields)
+# **termsPost**
+> \BlackboardRest\Model\Term termsPost($input, $fields)
 
 Create Term
 
@@ -91,10 +91,10 @@ $input = new \BlackboardRest\Model\Input12(); // \BlackboardRest\Model\Input12 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1TermsPost($input, $fields);
+    $result = $api_instance->termsPost($input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling TermsApi->learnApiPublicV1TermsPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling TermsApi->termsPost: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -121,8 +121,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1TermsTermIdDelete**
-> learnApiPublicV1TermsTermIdDelete($term_id)
+# **termsTermIdDelete**
+> termsTermIdDelete($term_id)
 
 Delete Term
 
@@ -142,9 +142,9 @@ $api_instance = new BlackboardRest\Api\TermsApi();
 $term_id = "term_id_example"; // string | The term ID.  This may be the primary ID, or the secondary ID prefixed with the ID type.    | ID type    | Example                |  |------------|------------------------|  | primary    | _123_1                 |  | externalId | externalId:spring.2016 |
 
 try {
-    $api_instance->learnApiPublicV1TermsTermIdDelete($term_id);
+    $api_instance->termsTermIdDelete($term_id);
 } catch (Exception $e) {
-    echo 'Exception when calling TermsApi->learnApiPublicV1TermsTermIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling TermsApi->termsTermIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -170,8 +170,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1TermsTermIdGet**
-> \BlackboardRest\Model\Term learnApiPublicV1TermsTermIdGet($term_id, $fields)
+# **termsTermIdGet**
+> \BlackboardRest\Model\Term termsTermIdGet($term_id, $fields)
 
 Get Term
 
@@ -192,10 +192,10 @@ $term_id = "term_id_example"; // string | The term ID.  This may be the primary 
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1TermsTermIdGet($term_id, $fields);
+    $result = $api_instance->termsTermIdGet($term_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling TermsApi->learnApiPublicV1TermsTermIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling TermsApi->termsTermIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -222,8 +222,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1TermsTermIdPatch**
-> \BlackboardRest\Model\Term learnApiPublicV1TermsTermIdPatch($term_id, $input, $fields)
+# **termsTermIdPatch**
+> \BlackboardRest\Model\Term termsTermIdPatch($term_id, $input, $fields)
 
 Update Term
 
@@ -245,10 +245,10 @@ $input = new \BlackboardRest\Model\Input13(); // \BlackboardRest\Model\Input13 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1TermsTermIdPatch($term_id, $input, $fields);
+    $result = $api_instance->termsTermIdPatch($term_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling TermsApi->learnApiPublicV1TermsTermIdPatch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling TermsApi->termsTermIdPatch: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

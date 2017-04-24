@@ -1,19 +1,19 @@
 # BlackboardRest\CourseMembershipsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1CoursesCourseIdUsersGet**](CourseMembershipsApi.md#learnApiPublicV1CoursesCourseIdUsersGet) | **GET** /learn/api/public/v1/courses/{courseId}/users | Get Memberships
-[**learnApiPublicV1CoursesCourseIdUsersUserIdDelete**](CourseMembershipsApi.md#learnApiPublicV1CoursesCourseIdUsersUserIdDelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/users/{userId} | Delete Membership
-[**learnApiPublicV1CoursesCourseIdUsersUserIdGet**](CourseMembershipsApi.md#learnApiPublicV1CoursesCourseIdUsersUserIdGet) | **GET** /learn/api/public/v1/courses/{courseId}/users/{userId} | Get Membership
-[**learnApiPublicV1CoursesCourseIdUsersUserIdPatch**](CourseMembershipsApi.md#learnApiPublicV1CoursesCourseIdUsersUserIdPatch) | **PATCH** /learn/api/public/v1/courses/{courseId}/users/{userId} | Update Membership
-[**learnApiPublicV1CoursesCourseIdUsersUserIdPut**](CourseMembershipsApi.md#learnApiPublicV1CoursesCourseIdUsersUserIdPut) | **PUT** /learn/api/public/v1/courses/{courseId}/users/{userId} | Create Membership
-[**learnApiPublicV1UsersUserIdCoursesGet**](CourseMembershipsApi.md#learnApiPublicV1UsersUserIdCoursesGet) | **GET** /learn/api/public/v1/users/{userId}/courses | Get Memberships
+[**coursesCourseIdUsersGet**](CourseMembershipsApi.md#coursesCourseIdUsersGet) | **GET** courses/{courseId}/users | Get Memberships
+[**coursesCourseIdUsersUserIdDelete**](CourseMembershipsApi.md#coursesCourseIdUsersUserIdDelete) | **DELETE** courses/{courseId}/users/{userId} | Delete Membership
+[**coursesCourseIdUsersUserIdGet**](CourseMembershipsApi.md#coursesCourseIdUsersUserIdGet) | **GET** courses/{courseId}/users/{userId} | Get Membership
+[**coursesCourseIdUsersUserIdPatch**](CourseMembershipsApi.md#coursesCourseIdUsersUserIdPatch) | **PATCH** courses/{courseId}/users/{userId} | Update Membership
+[**coursesCourseIdUsersUserIdPut**](CourseMembershipsApi.md#coursesCourseIdUsersUserIdPut) | **PUT** courses/{courseId}/users/{userId} | Create Membership
+[**usersUserIdCoursesGet**](CourseMembershipsApi.md#usersUserIdCoursesGet) | **GET** users/{userId}/courses | Get Memberships
 
 
-# **learnApiPublicV1CoursesCourseIdUsersGet**
-> \BlackboardRest\Model\InlineResponse2005 learnApiPublicV1CoursesCourseIdUsersGet($course_id, $offset, $limit, $created, $created_compare, $data_source_id, $sort, $fields)
+# **coursesCourseIdUsersGet**
+> \BlackboardRest\Model\InlineResponse2005 coursesCourseIdUsersGet($course_id, $offset, $limit, $created, $created_compare, $data_source_id, $sort, $fields)
 
 Get Memberships
 
@@ -40,10 +40,10 @@ $sort = "sort_example"; // string | Properties to sort by. This is a comma-delim
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdUsersGet($course_id, $offset, $limit, $created, $created_compare, $data_source_id, $sort, $fields);
+    $result = $api_instance->coursesCourseIdUsersGet($course_id, $offset, $limit, $created, $created_compare, $data_source_id, $sort, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseMembershipsApi->learnApiPublicV1CoursesCourseIdUsersGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseMembershipsApi->coursesCourseIdUsersGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -76,8 +76,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdUsersUserIdDelete**
-> learnApiPublicV1CoursesCourseIdUsersUserIdDelete($course_id, $user_id)
+# **coursesCourseIdUsersUserIdDelete**
+> coursesCourseIdUsersUserIdDelete($course_id, $user_id)
 
 Delete Membership
 
@@ -98,9 +98,9 @@ $course_id = "course_id_example"; // string | The course or organization ID.  Th
 $user_id = "user_id_example"; // string | The user ID.  This may be the primary ID, or any of the secondary IDs prefixed with the ID type.    | ID type    | Example                               |  |------------|---------------------------------------|  | primary    | _123_1                                |  | externalId | externalId:jsmith                     |  | userName   | userName:jsmith                       |  | uuid       | uuid:915c7567d76d444abf1eed56aad3beb5 |
 
 try {
-    $api_instance->learnApiPublicV1CoursesCourseIdUsersUserIdDelete($course_id, $user_id);
+    $api_instance->coursesCourseIdUsersUserIdDelete($course_id, $user_id);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseMembershipsApi->learnApiPublicV1CoursesCourseIdUsersUserIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseMembershipsApi->coursesCourseIdUsersUserIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -127,8 +127,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdUsersUserIdGet**
-> \BlackboardRest\Model\Membership learnApiPublicV1CoursesCourseIdUsersUserIdGet($course_id, $user_id, $fields)
+# **coursesCourseIdUsersUserIdGet**
+> \BlackboardRest\Model\Membership coursesCourseIdUsersUserIdGet($course_id, $user_id, $fields)
 
 Get Membership
 
@@ -150,10 +150,10 @@ $user_id = "user_id_example"; // string | The user ID.  This may be the primary 
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdUsersUserIdGet($course_id, $user_id, $fields);
+    $result = $api_instance->coursesCourseIdUsersUserIdGet($course_id, $user_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseMembershipsApi->learnApiPublicV1CoursesCourseIdUsersUserIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseMembershipsApi->coursesCourseIdUsersUserIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -181,8 +181,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdUsersUserIdPatch**
-> \BlackboardRest\Model\Membership learnApiPublicV1CoursesCourseIdUsersUserIdPatch($course_id, $user_id, $input, $fields)
+# **coursesCourseIdUsersUserIdPatch**
+> \BlackboardRest\Model\Membership coursesCourseIdUsersUserIdPatch($course_id, $user_id, $input, $fields)
 
 Update Membership
 
@@ -205,10 +205,10 @@ $input = new \BlackboardRest\Model\Input9(); // \BlackboardRest\Model\Input9 | J
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdUsersUserIdPatch($course_id, $user_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdUsersUserIdPatch($course_id, $user_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseMembershipsApi->learnApiPublicV1CoursesCourseIdUsersUserIdPatch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseMembershipsApi->coursesCourseIdUsersUserIdPatch: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -237,8 +237,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdUsersUserIdPut**
-> \BlackboardRest\Model\Membership learnApiPublicV1CoursesCourseIdUsersUserIdPut($course_id, $user_id, $input, $fields)
+# **coursesCourseIdUsersUserIdPut**
+> \BlackboardRest\Model\Membership coursesCourseIdUsersUserIdPut($course_id, $user_id, $input, $fields)
 
 Create Membership
 
@@ -261,10 +261,10 @@ $input = new \BlackboardRest\Model\Input8(); // \BlackboardRest\Model\Input8 | J
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdUsersUserIdPut($course_id, $user_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdUsersUserIdPut($course_id, $user_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseMembershipsApi->learnApiPublicV1CoursesCourseIdUsersUserIdPut: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseMembershipsApi->coursesCourseIdUsersUserIdPut: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -293,8 +293,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1UsersUserIdCoursesGet**
-> \BlackboardRest\Model\InlineResponse2005 learnApiPublicV1UsersUserIdCoursesGet($user_id, $offset, $limit, $created, $created_compare, $data_source_id, $sort, $fields)
+# **usersUserIdCoursesGet**
+> \BlackboardRest\Model\InlineResponse2005 usersUserIdCoursesGet($user_id, $offset, $limit, $created, $created_compare, $data_source_id, $sort, $fields)
 
 Get Memberships
 
@@ -321,10 +321,10 @@ $sort = "sort_example"; // string | Properties to sort by. This is a comma-delim
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1UsersUserIdCoursesGet($user_id, $offset, $limit, $created, $created_compare, $data_source_id, $sort, $fields);
+    $result = $api_instance->usersUserIdCoursesGet($user_id, $offset, $limit, $created, $created_compare, $data_source_id, $sort, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseMembershipsApi->learnApiPublicV1UsersUserIdCoursesGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseMembershipsApi->usersUserIdCoursesGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

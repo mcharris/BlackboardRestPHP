@@ -1,24 +1,24 @@
 # BlackboardRest\CourseGradesApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet**](CourseGradesApi.md#learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/attempts/{attemptId} | Get Column Attempt
-[**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet**](CourseGradesApi.md#learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/attempts | Get Column Attempts
-[**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete**](CourseGradesApi.md#learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId} | Delete Grade Column
-[**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet**](CourseGradesApi.md#learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId} | Get Grade Column
-[**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch**](CourseGradesApi.md#learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch) | **PATCH** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId} | Update Grade Column
-[**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet**](CourseGradesApi.md#learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users | Get Column Grades
-[**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet**](CourseGradesApi.md#learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users/{userId} | Get Column Grade
-[**learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch**](CourseGradesApi.md#learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch) | **PATCH** /learn/api/public/v1/courses/{courseId}/gradebook/columns/{columnId}/users/{userId} | Update Column Grade
-[**learnApiPublicV1CoursesCourseIdGradebookColumnsGet**](CourseGradesApi.md#learnApiPublicV1CoursesCourseIdGradebookColumnsGet) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/columns | Get Grade Columns
-[**learnApiPublicV1CoursesCourseIdGradebookColumnsPost**](CourseGradesApi.md#learnApiPublicV1CoursesCourseIdGradebookColumnsPost) | **POST** /learn/api/public/v1/courses/{courseId}/gradebook/columns | Create Grade Column
-[**learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet**](CourseGradesApi.md#learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet) | **GET** /learn/api/public/v1/courses/{courseId}/gradebook/users/{userId} | Get User Grades
+[**coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet**](CourseGradesApi.md#coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet) | **GET** courses/{courseId}/gradebook/columns/{columnId}/attempts/{attemptId} | Get Column Attempt
+[**coursesCourseIdGradebookColumnsColumnIdAttemptsGet**](CourseGradesApi.md#coursesCourseIdGradebookColumnsColumnIdAttemptsGet) | **GET** courses/{courseId}/gradebook/columns/{columnId}/attempts | Get Column Attempts
+[**coursesCourseIdGradebookColumnsColumnIdDelete**](CourseGradesApi.md#coursesCourseIdGradebookColumnsColumnIdDelete) | **DELETE** courses/{courseId}/gradebook/columns/{columnId} | Delete Grade Column
+[**coursesCourseIdGradebookColumnsColumnIdGet**](CourseGradesApi.md#coursesCourseIdGradebookColumnsColumnIdGet) | **GET** courses/{courseId}/gradebook/columns/{columnId} | Get Grade Column
+[**coursesCourseIdGradebookColumnsColumnIdPatch**](CourseGradesApi.md#coursesCourseIdGradebookColumnsColumnIdPatch) | **PATCH** courses/{courseId}/gradebook/columns/{columnId} | Update Grade Column
+[**coursesCourseIdGradebookColumnsColumnIdUsersGet**](CourseGradesApi.md#coursesCourseIdGradebookColumnsColumnIdUsersGet) | **GET** courses/{courseId}/gradebook/columns/{columnId}/users | Get Column Grades
+[**coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet**](CourseGradesApi.md#coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet) | **GET** courses/{courseId}/gradebook/columns/{columnId}/users/{userId} | Get Column Grade
+[**coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch**](CourseGradesApi.md#coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch) | **PATCH** courses/{courseId}/gradebook/columns/{columnId}/users/{userId} | Update Column Grade
+[**coursesCourseIdGradebookColumnsGet**](CourseGradesApi.md#coursesCourseIdGradebookColumnsGet) | **GET** courses/{courseId}/gradebook/columns | Get Grade Columns
+[**coursesCourseIdGradebookColumnsPost**](CourseGradesApi.md#coursesCourseIdGradebookColumnsPost) | **POST** courses/{courseId}/gradebook/columns | Create Grade Column
+[**coursesCourseIdGradebookUsersUserIdGet**](CourseGradesApi.md#coursesCourseIdGradebookUsersUserIdGet) | **GET** courses/{courseId}/gradebook/users/{userId} | Get User Grades
 
 
-# **learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet**
-> \BlackboardRest\Model\Attempt learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet($course_id, $column_id, $attempt_id, $fields)
+# **coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet**
+> \BlackboardRest\Model\Attempt coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet($course_id, $column_id, $attempt_id, $fields)
 
 Get Column Attempt
 
@@ -41,10 +41,10 @@ $attempt_id = "attempt_id_example"; // string |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet($course_id, $column_id, $attempt_id, $fields);
+    $result = $api_instance->coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet($course_id, $column_id, $attempt_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGradesApi->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGradesApi->coursesCourseIdGradebookColumnsColumnIdAttemptsAttemptIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -73,8 +73,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet**
-> \BlackboardRest\Model\InlineResponse20010 learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet($course_id, $column_id, $offset, $limit, $user_id, $attempt_statuses, $fields)
+# **coursesCourseIdGradebookColumnsColumnIdAttemptsGet**
+> \BlackboardRest\Model\InlineResponse20010 coursesCourseIdGradebookColumnsColumnIdAttemptsGet($course_id, $column_id, $offset, $limit, $user_id, $attempt_statuses, $fields)
 
 Get Column Attempts
 
@@ -100,10 +100,10 @@ $attempt_statuses = "attempt_statuses_example"; // string | Search for grade col
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet($course_id, $column_id, $offset, $limit, $user_id, $attempt_statuses, $fields);
+    $result = $api_instance->coursesCourseIdGradebookColumnsColumnIdAttemptsGet($course_id, $column_id, $offset, $limit, $user_id, $attempt_statuses, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGradesApi->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdAttemptsGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGradesApi->coursesCourseIdGradebookColumnsColumnIdAttemptsGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -135,8 +135,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete**
-> learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete($course_id, $column_id, $only_if_empty)
+# **coursesCourseIdGradebookColumnsColumnIdDelete**
+> coursesCourseIdGradebookColumnsColumnIdDelete($course_id, $column_id, $only_if_empty)
 
 Delete Grade Column
 
@@ -158,9 +158,9 @@ $column_id = "column_id_example"; // string | The grade column ID.  This may be 
 $only_if_empty = true; // bool | 
 
 try {
-    $api_instance->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete($course_id, $column_id, $only_if_empty);
+    $api_instance->coursesCourseIdGradebookColumnsColumnIdDelete($course_id, $column_id, $only_if_empty);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGradesApi->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGradesApi->coursesCourseIdGradebookColumnsColumnIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -188,8 +188,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet**
-> \BlackboardRest\Model\GradeColumn learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet($course_id, $column_id, $fields)
+# **coursesCourseIdGradebookColumnsColumnIdGet**
+> \BlackboardRest\Model\GradeColumn coursesCourseIdGradebookColumnsColumnIdGet($course_id, $column_id, $fields)
 
 Get Grade Column
 
@@ -211,10 +211,10 @@ $column_id = "column_id_example"; // string | The grade column ID.  This may be 
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet($course_id, $column_id, $fields);
+    $result = $api_instance->coursesCourseIdGradebookColumnsColumnIdGet($course_id, $column_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGradesApi->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGradesApi->coursesCourseIdGradebookColumnsColumnIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -242,8 +242,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch**
-> \BlackboardRest\Model\GradeColumn learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch($course_id, $column_id, $input, $fields)
+# **coursesCourseIdGradebookColumnsColumnIdPatch**
+> \BlackboardRest\Model\GradeColumn coursesCourseIdGradebookColumnsColumnIdPatch($course_id, $column_id, $input, $fields)
 
 Update Grade Column
 
@@ -266,10 +266,10 @@ $input = new \BlackboardRest\Model\Input17(); // \BlackboardRest\Model\Input17 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch($course_id, $column_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdGradebookColumnsColumnIdPatch($course_id, $column_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGradesApi->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdPatch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGradesApi->coursesCourseIdGradebookColumnsColumnIdPatch: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -298,8 +298,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet**
-> \BlackboardRest\Model\InlineResponse20011 learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet($course_id, $column_id, $offset, $limit, $fields)
+# **coursesCourseIdGradebookColumnsColumnIdUsersGet**
+> \BlackboardRest\Model\InlineResponse20011 coursesCourseIdGradebookColumnsColumnIdUsersGet($course_id, $column_id, $offset, $limit, $fields)
 
 Get Column Grades
 
@@ -323,10 +323,10 @@ $limit = 56; // int | The maximum number of results to be returned. There may be
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet($course_id, $column_id, $offset, $limit, $fields);
+    $result = $api_instance->coursesCourseIdGradebookColumnsColumnIdUsersGet($course_id, $column_id, $offset, $limit, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGradesApi->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGradesApi->coursesCourseIdGradebookColumnsColumnIdUsersGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -356,8 +356,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet**
-> \BlackboardRest\Model\Grade learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet($course_id, $column_id, $user_id, $fields)
+# **coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet**
+> \BlackboardRest\Model\Grade coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet($course_id, $column_id, $user_id, $fields)
 
 Get Column Grade
 
@@ -380,10 +380,10 @@ $user_id = "user_id_example"; // string | The user ID.  This may be the primary 
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet($course_id, $column_id, $user_id, $fields);
+    $result = $api_instance->coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet($course_id, $column_id, $user_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGradesApi->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGradesApi->coursesCourseIdGradebookColumnsColumnIdUsersUserIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -412,8 +412,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch**
-> \BlackboardRest\Model\Grade learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch($course_id, $column_id, $user_id, $input, $fields)
+# **coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch**
+> \BlackboardRest\Model\Grade coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch($course_id, $column_id, $user_id, $input, $fields)
 
 Update Column Grade
 
@@ -437,10 +437,10 @@ $input = new \BlackboardRest\Model\Input18(); // \BlackboardRest\Model\Input18 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch($course_id, $column_id, $user_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch($course_id, $column_id, $user_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGradesApi->learnApiPublicV1CoursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGradesApi->coursesCourseIdGradebookColumnsColumnIdUsersUserIdPatch: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -470,8 +470,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGradebookColumnsGet**
-> \BlackboardRest\Model\InlineResponse2009 learnApiPublicV1CoursesCourseIdGradebookColumnsGet($course_id, $offset, $limit, $content_id, $fields)
+# **coursesCourseIdGradebookColumnsGet**
+> \BlackboardRest\Model\InlineResponse2009 coursesCourseIdGradebookColumnsGet($course_id, $offset, $limit, $content_id, $fields)
 
 Get Grade Columns
 
@@ -495,10 +495,10 @@ $content_id = "content_id_example"; // string | Search for grade columns associa
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGradebookColumnsGet($course_id, $offset, $limit, $content_id, $fields);
+    $result = $api_instance->coursesCourseIdGradebookColumnsGet($course_id, $offset, $limit, $content_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGradesApi->learnApiPublicV1CoursesCourseIdGradebookColumnsGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGradesApi->coursesCourseIdGradebookColumnsGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -528,8 +528,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGradebookColumnsPost**
-> \BlackboardRest\Model\GradeColumn learnApiPublicV1CoursesCourseIdGradebookColumnsPost($course_id, $input, $fields)
+# **coursesCourseIdGradebookColumnsPost**
+> \BlackboardRest\Model\GradeColumn coursesCourseIdGradebookColumnsPost($course_id, $input, $fields)
 
 Create Grade Column
 
@@ -551,10 +551,10 @@ $input = new \BlackboardRest\Model\Input16(); // \BlackboardRest\Model\Input16 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGradebookColumnsPost($course_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdGradebookColumnsPost($course_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGradesApi->learnApiPublicV1CoursesCourseIdGradebookColumnsPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGradesApi->coursesCourseIdGradebookColumnsPost: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -582,8 +582,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet**
-> \BlackboardRest\Model\InlineResponse20011 learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet($course_id, $user_id, $offset, $limit, $fields)
+# **coursesCourseIdGradebookUsersUserIdGet**
+> \BlackboardRest\Model\InlineResponse20011 coursesCourseIdGradebookUsersUserIdGet($course_id, $user_id, $offset, $limit, $fields)
 
 Get User Grades
 
@@ -607,10 +607,10 @@ $limit = 56; // int | The maximum number of results to be returned. There may be
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet($course_id, $user_id, $offset, $limit, $fields);
+    $result = $api_instance->coursesCourseIdGradebookUsersUserIdGet($course_id, $user_id, $offset, $limit, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGradesApi->learnApiPublicV1CoursesCourseIdGradebookUsersUserIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGradesApi->coursesCourseIdGradebookUsersUserIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

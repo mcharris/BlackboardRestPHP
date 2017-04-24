@@ -1,17 +1,17 @@
 # BlackboardRest\CourseGroupUsersApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet**](CourseGroupUsersApi.md#learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet) | **GET** /learn/api/public/v1/courses/{courseId}/groups/{groupId}/users | Get Group Memberships
-[**learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete**](CourseGroupUsersApi.md#learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId} | Delete Group Membership
-[**learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet**](CourseGroupUsersApi.md#learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet) | **GET** /learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId} | Get Group Membership
-[**learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut**](CourseGroupUsersApi.md#learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut) | **PUT** /learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId} | Put Group Membership
+[**coursesCourseIdGroupsGroupIdUsersGet**](CourseGroupUsersApi.md#coursesCourseIdGroupsGroupIdUsersGet) | **GET** courses/{courseId}/groups/{groupId}/users | Get Group Memberships
+[**coursesCourseIdGroupsGroupIdUsersUserIdDelete**](CourseGroupUsersApi.md#coursesCourseIdGroupsGroupIdUsersUserIdDelete) | **DELETE** courses/{courseId}/groups/{groupId}/users/{userId} | Delete Group Membership
+[**coursesCourseIdGroupsGroupIdUsersUserIdGet**](CourseGroupUsersApi.md#coursesCourseIdGroupsGroupIdUsersUserIdGet) | **GET** courses/{courseId}/groups/{groupId}/users/{userId} | Get Group Membership
+[**coursesCourseIdGroupsGroupIdUsersUserIdPut**](CourseGroupUsersApi.md#coursesCourseIdGroupsGroupIdUsersUserIdPut) | **PUT** courses/{courseId}/groups/{groupId}/users/{userId} | Put Group Membership
 
 
-# **learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet**
-> \BlackboardRest\Model\InlineResponse20013 learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet($group_id, $course_id, $offset, $limit, $fields)
+# **coursesCourseIdGroupsGroupIdUsersGet**
+> \BlackboardRest\Model\InlineResponse20013 coursesCourseIdGroupsGroupIdUsersGet($group_id, $course_id, $offset, $limit, $fields)
 
 Get Group Memberships
 
@@ -35,10 +35,10 @@ $limit = 56; // int | The maximum number of results to be returned. There may be
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet($group_id, $course_id, $offset, $limit, $fields);
+    $result = $api_instance->coursesCourseIdGroupsGroupIdUsersGet($group_id, $course_id, $offset, $limit, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGroupUsersApi->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGroupUsersApi->coursesCourseIdGroupsGroupIdUsersGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -68,8 +68,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete**
-> learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete($course_id, $group_id, $user_id)
+# **coursesCourseIdGroupsGroupIdUsersUserIdDelete**
+> coursesCourseIdGroupsGroupIdUsersUserIdDelete($course_id, $group_id, $user_id)
 
 Delete Group Membership
 
@@ -91,9 +91,9 @@ $group_id = "group_id_example"; // string | The group ID.  This may be the prima
 $user_id = "user_id_example"; // string | The user ID.  This may be the primary ID, or any of the secondary IDs prefixed with the ID type.    | ID type    | Example                               |  |------------|---------------------------------------|  | primary    | _123_1                                |  | externalId | externalId:jsmith                     |  | userName   | userName:jsmith                       |  | uuid       | uuid:915c7567d76d444abf1eed56aad3beb5 |
 
 try {
-    $api_instance->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete($course_id, $group_id, $user_id);
+    $api_instance->coursesCourseIdGroupsGroupIdUsersUserIdDelete($course_id, $group_id, $user_id);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGroupUsersApi->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGroupUsersApi->coursesCourseIdGroupsGroupIdUsersUserIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -121,8 +121,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet**
-> \BlackboardRest\Model\GroupMembership learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet($course_id, $group_id, $user_id, $fields)
+# **coursesCourseIdGroupsGroupIdUsersUserIdGet**
+> \BlackboardRest\Model\GroupMembership coursesCourseIdGroupsGroupIdUsersUserIdGet($course_id, $group_id, $user_id, $fields)
 
 Get Group Membership
 
@@ -145,10 +145,10 @@ $user_id = "user_id_example"; // string | The user ID.  This may be the primary 
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet($course_id, $group_id, $user_id, $fields);
+    $result = $api_instance->coursesCourseIdGroupsGroupIdUsersUserIdGet($course_id, $group_id, $user_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGroupUsersApi->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGroupUsersApi->coursesCourseIdGroupsGroupIdUsersUserIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -177,8 +177,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut**
-> \BlackboardRest\Model\GroupMembership learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut($course_id, $group_id, $user_id, $fields)
+# **coursesCourseIdGroupsGroupIdUsersUserIdPut**
+> \BlackboardRest\Model\GroupMembership coursesCourseIdGroupsGroupIdUsersUserIdPut($course_id, $group_id, $user_id, $fields)
 
 Put Group Membership
 
@@ -201,10 +201,10 @@ $user_id = "user_id_example"; // string | The user ID.  This may be the primary 
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut($course_id, $group_id, $user_id, $fields);
+    $result = $api_instance->coursesCourseIdGroupsGroupIdUsersUserIdPut($course_id, $group_id, $user_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CourseGroupUsersApi->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CourseGroupUsersApi->coursesCourseIdGroupsGroupIdUsersUserIdPut: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

@@ -77,78 +77,78 @@ class CoursesApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet
+     * Test case for coursesCourseIdChildrenChildCourseIdGet
      *
      * Get Child.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet()
+    public function testCoursesCourseIdChildrenChildCourseIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdChildrenGet
+     * Test case for coursesCourseIdChildrenGet
      *
      * Get Children.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdChildrenGet()
+    public function testCoursesCourseIdChildrenGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdDelete
+     * Test case for coursesCourseIdDelete
      *
      * Delete Course.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdDelete()
+    public function testCoursesCourseIdDelete()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdGet
+     * Test case for coursesCourseIdGet
      *
      * Get Course.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdGet()
+    public function testCoursesCourseIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesCourseIdPatch
+     * Test case for coursesCourseIdPatch
      *
      * Update Course.
      *
      */
-    public function testLearnApiPublicV1CoursesCourseIdPatch()
+    public function testCoursesCourseIdPatch()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesGet
+     * Test case for coursesGet
      *
      * Get Courses.
      *
      */
-    public function testLearnApiPublicV1CoursesGet()
+    public function testCoursesGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1CoursesPost
+     * Test case for coursesPost
      *
      * Create Course.
      *
      */
-    public function testLearnApiPublicV1CoursesPost()
+    public function testCoursesPost()
     {
 
     }

@@ -88,7 +88,7 @@ class CoursesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet
+     * Operation coursesCourseIdChildrenChildCourseIdGet
      *
      * Get Child
      *
@@ -98,14 +98,14 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\CourseChild
      */
-    public function learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet($course_id, $child_course_id, $fields = null)
+    public function coursesCourseIdChildrenChildCourseIdGet($course_id, $child_course_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGetWithHttpInfo($course_id, $child_course_id, $fields);
+        list($response) = $this->coursesCourseIdChildrenChildCourseIdGetWithHttpInfo($course_id, $child_course_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGetWithHttpInfo
+     * Operation coursesCourseIdChildrenChildCourseIdGetWithHttpInfo
      *
      * Get Child
      *
@@ -115,18 +115,18 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\CourseChild, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGetWithHttpInfo($course_id, $child_course_id, $fields = null)
+    public function coursesCourseIdChildrenChildCourseIdGetWithHttpInfo($course_id, $child_course_id, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdChildrenChildCourseIdGet');
         }
         // verify the required parameter 'child_course_id' is set
         if ($child_course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $child_course_id when calling learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $child_course_id when calling coursesCourseIdChildrenChildCourseIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/children/{childCourseId}";
+        $resourcePath = "courses/{courseId}/children/{childCourseId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -181,7 +181,7 @@ class CoursesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\CourseChild',
-                '/learn/api/public/v1/courses/{courseId}/children/{childCourseId}'
+                'courses/{courseId}/children/{childCourseId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\CourseChild', $httpHeader), $statusCode, $httpHeader];
@@ -206,7 +206,7 @@ class CoursesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdChildrenGet
+     * Operation coursesCourseIdChildrenGet
      *
      * Get Children
      *
@@ -217,14 +217,14 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse2002
      */
-    public function learnApiPublicV1CoursesCourseIdChildrenGet($course_id, $offset = null, $limit = null, $fields = null)
+    public function coursesCourseIdChildrenGet($course_id, $offset = null, $limit = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdChildrenGetWithHttpInfo($course_id, $offset, $limit, $fields);
+        list($response) = $this->coursesCourseIdChildrenGetWithHttpInfo($course_id, $offset, $limit, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdChildrenGetWithHttpInfo
+     * Operation coursesCourseIdChildrenGetWithHttpInfo
      *
      * Get Children
      *
@@ -235,14 +235,14 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdChildrenGetWithHttpInfo($course_id, $offset = null, $limit = null, $fields = null)
+    public function coursesCourseIdChildrenGetWithHttpInfo($course_id, $offset = null, $limit = null, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdChildrenGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdChildrenGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/children";
+        $resourcePath = "courses/{courseId}/children";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -297,7 +297,7 @@ class CoursesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse2002',
-                '/learn/api/public/v1/courses/{courseId}/children'
+                'courses/{courseId}/children'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse2002', $httpHeader), $statusCode, $httpHeader];
@@ -322,7 +322,7 @@ class CoursesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdDelete
+     * Operation coursesCourseIdDelete
      *
      * Delete Course
      *
@@ -331,14 +331,14 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return void
      */
-    public function learnApiPublicV1CoursesCourseIdDelete($course_id, $remove_files = null)
+    public function coursesCourseIdDelete($course_id, $remove_files = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdDeleteWithHttpInfo($course_id, $remove_files);
+        list($response) = $this->coursesCourseIdDeleteWithHttpInfo($course_id, $remove_files);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdDeleteWithHttpInfo
+     * Operation coursesCourseIdDeleteWithHttpInfo
      *
      * Delete Course
      *
@@ -347,14 +347,14 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdDeleteWithHttpInfo($course_id, $remove_files = null)
+    public function coursesCourseIdDeleteWithHttpInfo($course_id, $remove_files = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdDelete');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}";
+        $resourcePath = "courses/{courseId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -401,7 +401,7 @@ class CoursesApi
                 $httpBody,
                 $headerParams,
                 null,
-                '/learn/api/public/v1/courses/{courseId}'
+                'courses/{courseId}'
             );
 
             return [null, $statusCode, $httpHeader];
@@ -426,7 +426,7 @@ class CoursesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGet
+     * Operation coursesCourseIdGet
      *
      * Get Course
      *
@@ -435,14 +435,14 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Course
      */
-    public function learnApiPublicV1CoursesCourseIdGet($course_id, $fields = null)
+    public function coursesCourseIdGet($course_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGetWithHttpInfo($course_id, $fields);
+        list($response) = $this->coursesCourseIdGetWithHttpInfo($course_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGetWithHttpInfo
+     * Operation coursesCourseIdGetWithHttpInfo
      *
      * Get Course
      *
@@ -451,14 +451,14 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Course, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGetWithHttpInfo($course_id, $fields = null)
+    public function coursesCourseIdGetWithHttpInfo($course_id, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}";
+        $resourcePath = "courses/{courseId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -505,7 +505,7 @@ class CoursesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Course',
-                '/learn/api/public/v1/courses/{courseId}'
+                'courses/{courseId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Course', $httpHeader), $statusCode, $httpHeader];
@@ -530,7 +530,7 @@ class CoursesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdPatch
+     * Operation coursesCourseIdPatch
      *
      * Update Course
      *
@@ -540,14 +540,14 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Course
      */
-    public function learnApiPublicV1CoursesCourseIdPatch($course_id, $input, $fields = null)
+    public function coursesCourseIdPatch($course_id, $input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdPatchWithHttpInfo($course_id, $input, $fields);
+        list($response) = $this->coursesCourseIdPatchWithHttpInfo($course_id, $input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdPatchWithHttpInfo
+     * Operation coursesCourseIdPatchWithHttpInfo
      *
      * Update Course
      *
@@ -557,18 +557,18 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Course, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdPatchWithHttpInfo($course_id, $input, $fields = null)
+    public function coursesCourseIdPatchWithHttpInfo($course_id, $input, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdPatch');
         }
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1CoursesCourseIdPatch');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling coursesCourseIdPatch');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}";
+        $resourcePath = "courses/{courseId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -620,7 +620,7 @@ class CoursesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Course',
-                '/learn/api/public/v1/courses/{courseId}'
+                'courses/{courseId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Course', $httpHeader), $statusCode, $httpHeader];
@@ -653,7 +653,7 @@ class CoursesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesGet
+     * Operation coursesGet
      *
      * Get Courses
      *
@@ -673,14 +673,14 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse2001
      */
-    public function learnApiPublicV1CoursesGet($offset = null, $limit = null, $course_id = null, $name = null, $description = null, $external_id = null, $created = null, $created_compare = null, $data_source_id = null, $term_id = null, $organization = null, $sort = null, $fields = null)
+    public function coursesGet($offset = null, $limit = null, $course_id = null, $name = null, $description = null, $external_id = null, $created = null, $created_compare = null, $data_source_id = null, $term_id = null, $organization = null, $sort = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesGetWithHttpInfo($offset, $limit, $course_id, $name, $description, $external_id, $created, $created_compare, $data_source_id, $term_id, $organization, $sort, $fields);
+        list($response) = $this->coursesGetWithHttpInfo($offset, $limit, $course_id, $name, $description, $external_id, $created, $created_compare, $data_source_id, $term_id, $organization, $sort, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesGetWithHttpInfo
+     * Operation coursesGetWithHttpInfo
      *
      * Get Courses
      *
@@ -700,10 +700,10 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse2001, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesGetWithHttpInfo($offset = null, $limit = null, $course_id = null, $name = null, $description = null, $external_id = null, $created = null, $created_compare = null, $data_source_id = null, $term_id = null, $organization = null, $sort = null, $fields = null)
+    public function coursesGetWithHttpInfo($offset = null, $limit = null, $course_id = null, $name = null, $description = null, $external_id = null, $created = null, $created_compare = null, $data_source_id = null, $term_id = null, $organization = null, $sort = null, $fields = null)
     {
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses";
+        $resourcePath = "courses";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -790,7 +790,7 @@ class CoursesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse2001',
-                '/learn/api/public/v1/courses'
+                'courses'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse2001', $httpHeader), $statusCode, $httpHeader];
@@ -811,7 +811,7 @@ class CoursesApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesPost
+     * Operation coursesPost
      *
      * Create Course
      *
@@ -820,14 +820,14 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\Course
      */
-    public function learnApiPublicV1CoursesPost($input, $fields = null)
+    public function coursesPost($input, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesPostWithHttpInfo($input, $fields);
+        list($response) = $this->coursesPostWithHttpInfo($input, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesPostWithHttpInfo
+     * Operation coursesPostWithHttpInfo
      *
      * Create Course
      *
@@ -836,14 +836,14 @@ class CoursesApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\Course, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesPostWithHttpInfo($input, $fields = null)
+    public function coursesPostWithHttpInfo($input, $fields = null)
     {
         // verify the required parameter 'input' is set
         if ($input === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $input when calling learnApiPublicV1CoursesPost');
+            throw new \InvalidArgumentException('Missing the required parameter $input when calling coursesPost');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses";
+        $resourcePath = "courses";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -887,7 +887,7 @@ class CoursesApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\Course',
-                '/learn/api/public/v1/courses'
+                'courses'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\Course', $httpHeader), $statusCode, $httpHeader];

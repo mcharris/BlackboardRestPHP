@@ -5,9 +5,7 @@
         "swagger",
         "php",
         "sdk",
-        "api",
-	"blackboard",
-	"rest"
+        "api"
     ],
     "homepage": "http://swagger.io",
     "license": "proprietary",

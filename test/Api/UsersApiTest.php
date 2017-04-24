@@ -77,56 +77,56 @@ class UsersApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1UsersGet
+     * Test case for usersGet
      *
      * Get Users.
      *
      */
-    public function testLearnApiPublicV1UsersGet()
+    public function testUsersGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1UsersPost
+     * Test case for usersPost
      *
      * Create User.
      *
      */
-    public function testLearnApiPublicV1UsersPost()
+    public function testUsersPost()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1UsersUserIdDelete
+     * Test case for usersUserIdDelete
      *
      * Delete User.
      *
      */
-    public function testLearnApiPublicV1UsersUserIdDelete()
+    public function testUsersUserIdDelete()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1UsersUserIdGet
+     * Test case for usersUserIdGet
      *
      * Get User.
      *
      */
-    public function testLearnApiPublicV1UsersUserIdGet()
+    public function testUsersUserIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1UsersUserIdPatch
+     * Test case for usersUserIdPatch
      *
      * Update User.
      *
      */
-    public function testLearnApiPublicV1UsersUserIdPatch()
+    public function testUsersUserIdPatch()
     {
 
     }

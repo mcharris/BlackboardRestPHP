@@ -1,20 +1,20 @@
 # BlackboardRest\ContentApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1CoursesCourseIdContentsContentIdChildrenGet**](ContentApi.md#learnApiPublicV1CoursesCourseIdContentsContentIdChildrenGet) | **GET** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/children | Get Children
-[**learnApiPublicV1CoursesCourseIdContentsContentIdChildrenPost**](ContentApi.md#learnApiPublicV1CoursesCourseIdContentsContentIdChildrenPost) | **POST** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/children | Create Child
-[**learnApiPublicV1CoursesCourseIdContentsContentIdDelete**](ContentApi.md#learnApiPublicV1CoursesCourseIdContentsContentIdDelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/contents/{contentId} | Delete Content
-[**learnApiPublicV1CoursesCourseIdContentsContentIdGet**](ContentApi.md#learnApiPublicV1CoursesCourseIdContentsContentIdGet) | **GET** /learn/api/public/v1/courses/{courseId}/contents/{contentId} | Get Content
-[**learnApiPublicV1CoursesCourseIdContentsContentIdPatch**](ContentApi.md#learnApiPublicV1CoursesCourseIdContentsContentIdPatch) | **PATCH** /learn/api/public/v1/courses/{courseId}/contents/{contentId} | Update Content
-[**learnApiPublicV1CoursesCourseIdContentsGet**](ContentApi.md#learnApiPublicV1CoursesCourseIdContentsGet) | **GET** /learn/api/public/v1/courses/{courseId}/contents | Get Contents
-[**learnApiPublicV1CoursesCourseIdContentsPost**](ContentApi.md#learnApiPublicV1CoursesCourseIdContentsPost) | **POST** /learn/api/public/v1/courses/{courseId}/contents | Create Content
+[**coursesCourseIdContentsContentIdChildrenGet**](ContentApi.md#coursesCourseIdContentsContentIdChildrenGet) | **GET** courses/{courseId}/contents/{contentId}/children | Get Children
+[**coursesCourseIdContentsContentIdChildrenPost**](ContentApi.md#coursesCourseIdContentsContentIdChildrenPost) | **POST** courses/{courseId}/contents/{contentId}/children | Create Child
+[**coursesCourseIdContentsContentIdDelete**](ContentApi.md#coursesCourseIdContentsContentIdDelete) | **DELETE** courses/{courseId}/contents/{contentId} | Delete Content
+[**coursesCourseIdContentsContentIdGet**](ContentApi.md#coursesCourseIdContentsContentIdGet) | **GET** courses/{courseId}/contents/{contentId} | Get Content
+[**coursesCourseIdContentsContentIdPatch**](ContentApi.md#coursesCourseIdContentsContentIdPatch) | **PATCH** courses/{courseId}/contents/{contentId} | Update Content
+[**coursesCourseIdContentsGet**](ContentApi.md#coursesCourseIdContentsGet) | **GET** courses/{courseId}/contents | Get Contents
+[**coursesCourseIdContentsPost**](ContentApi.md#coursesCourseIdContentsPost) | **POST** courses/{courseId}/contents | Create Content
 
 
-# **learnApiPublicV1CoursesCourseIdContentsContentIdChildrenGet**
-> \BlackboardRest\Model\InlineResponse2003 learnApiPublicV1CoursesCourseIdContentsContentIdChildrenGet($course_id, $content_id, $offset, $limit, $recursive, $fields)
+# **coursesCourseIdContentsContentIdChildrenGet**
+> \BlackboardRest\Model\InlineResponse2003 coursesCourseIdContentsContentIdChildrenGet($course_id, $content_id, $offset, $limit, $recursive, $fields)
 
 Get Children
 
@@ -39,10 +39,10 @@ $recursive = true; // bool | Search for child content recursively.  A value of '
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdContentsContentIdChildrenGet($course_id, $content_id, $offset, $limit, $recursive, $fields);
+    $result = $api_instance->coursesCourseIdContentsContentIdChildrenGet($course_id, $content_id, $offset, $limit, $recursive, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ContentApi->learnApiPublicV1CoursesCourseIdContentsContentIdChildrenGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContentApi->coursesCourseIdContentsContentIdChildrenGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -73,8 +73,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdContentsContentIdChildrenPost**
-> \BlackboardRest\Model\Content learnApiPublicV1CoursesCourseIdContentsContentIdChildrenPost($course_id, $content_id, $input, $fields)
+# **coursesCourseIdContentsContentIdChildrenPost**
+> \BlackboardRest\Model\Content coursesCourseIdContentsContentIdChildrenPost($course_id, $content_id, $input, $fields)
 
 Create Child
 
@@ -97,10 +97,10 @@ $input = new \BlackboardRest\Model\Input6(); // \BlackboardRest\Model\Input6 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdContentsContentIdChildrenPost($course_id, $content_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdContentsContentIdChildrenPost($course_id, $content_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ContentApi->learnApiPublicV1CoursesCourseIdContentsContentIdChildrenPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContentApi->coursesCourseIdContentsContentIdChildrenPost: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -129,8 +129,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdContentsContentIdDelete**
-> learnApiPublicV1CoursesCourseIdContentsContentIdDelete($course_id, $content_id)
+# **coursesCourseIdContentsContentIdDelete**
+> coursesCourseIdContentsContentIdDelete($course_id, $content_id)
 
 Delete Content
 
@@ -151,9 +151,9 @@ $course_id = "course_id_example"; // string | The course or organization ID.  Th
 $content_id = "content_id_example"; // string | 
 
 try {
-    $api_instance->learnApiPublicV1CoursesCourseIdContentsContentIdDelete($course_id, $content_id);
+    $api_instance->coursesCourseIdContentsContentIdDelete($course_id, $content_id);
 } catch (Exception $e) {
-    echo 'Exception when calling ContentApi->learnApiPublicV1CoursesCourseIdContentsContentIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContentApi->coursesCourseIdContentsContentIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -180,8 +180,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdContentsContentIdGet**
-> \BlackboardRest\Model\Content learnApiPublicV1CoursesCourseIdContentsContentIdGet($course_id, $content_id, $fields)
+# **coursesCourseIdContentsContentIdGet**
+> \BlackboardRest\Model\Content coursesCourseIdContentsContentIdGet($course_id, $content_id, $fields)
 
 Get Content
 
@@ -203,10 +203,10 @@ $content_id = "content_id_example"; // string |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdContentsContentIdGet($course_id, $content_id, $fields);
+    $result = $api_instance->coursesCourseIdContentsContentIdGet($course_id, $content_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ContentApi->learnApiPublicV1CoursesCourseIdContentsContentIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContentApi->coursesCourseIdContentsContentIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -234,8 +234,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdContentsContentIdPatch**
-> \BlackboardRest\Model\Content learnApiPublicV1CoursesCourseIdContentsContentIdPatch($course_id, $content_id, $input, $fields)
+# **coursesCourseIdContentsContentIdPatch**
+> \BlackboardRest\Model\Content coursesCourseIdContentsContentIdPatch($course_id, $content_id, $input, $fields)
 
 Update Content
 
@@ -258,10 +258,10 @@ $input = new \BlackboardRest\Model\Input5(); // \BlackboardRest\Model\Input5 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdContentsContentIdPatch($course_id, $content_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdContentsContentIdPatch($course_id, $content_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ContentApi->learnApiPublicV1CoursesCourseIdContentsContentIdPatch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContentApi->coursesCourseIdContentsContentIdPatch: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -290,8 +290,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdContentsGet**
-> \BlackboardRest\Model\InlineResponse2003 learnApiPublicV1CoursesCourseIdContentsGet($course_id, $offset, $limit, $fields)
+# **coursesCourseIdContentsGet**
+> \BlackboardRest\Model\InlineResponse2003 coursesCourseIdContentsGet($course_id, $offset, $limit, $fields)
 
 Get Contents
 
@@ -314,10 +314,10 @@ $limit = 56; // int | The maximum number of results to be returned. There may be
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdContentsGet($course_id, $offset, $limit, $fields);
+    $result = $api_instance->coursesCourseIdContentsGet($course_id, $offset, $limit, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ContentApi->learnApiPublicV1CoursesCourseIdContentsGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContentApi->coursesCourseIdContentsGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -346,8 +346,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdContentsPost**
-> \BlackboardRest\Model\Content learnApiPublicV1CoursesCourseIdContentsPost($course_id, $input, $fields)
+# **coursesCourseIdContentsPost**
+> \BlackboardRest\Model\Content coursesCourseIdContentsPost($course_id, $input, $fields)
 
 Create Content
 
@@ -369,10 +369,10 @@ $input = new \BlackboardRest\Model\Input4(); // \BlackboardRest\Model\Input4 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdContentsPost($course_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdContentsPost($course_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ContentApi->learnApiPublicV1CoursesCourseIdContentsPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContentApi->coursesCourseIdContentsPost: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

@@ -88,31 +88,31 @@ class SystemApi
     }
 
     /**
-     * Operation learnApiPublicV1SystemVersionGet
+     * Operation systemVersionGet
      *
      * Get Version
      *
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\VersionInfo
      */
-    public function learnApiPublicV1SystemVersionGet()
+    public function systemVersionGet()
     {
-        list($response) = $this->learnApiPublicV1SystemVersionGetWithHttpInfo();
+        list($response) = $this->systemVersionGetWithHttpInfo();
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1SystemVersionGetWithHttpInfo
+     * Operation systemVersionGetWithHttpInfo
      *
      * Get Version
      *
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\VersionInfo, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1SystemVersionGetWithHttpInfo()
+    public function systemVersionGetWithHttpInfo()
     {
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/system/version";
+        $resourcePath = "system/version";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -147,7 +147,7 @@ class SystemApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\VersionInfo',
-                '/learn/api/public/v1/system/version'
+                'system/version'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\VersionInfo', $httpHeader), $statusCode, $httpHeader];

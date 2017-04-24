@@ -1,17 +1,17 @@
 # BlackboardRest\ContentGroupAssignmentsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet**](ContentGroupAssignmentsApi.md#learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet) | **GET** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups | Get Content Groups
-[**learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete**](ContentGroupAssignmentsApi.md#learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete) | **DELETE** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId} | Delete Content Group
-[**learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet**](ContentGroupAssignmentsApi.md#learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet) | **GET** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId} | Get Content Group
-[**learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut**](ContentGroupAssignmentsApi.md#learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut) | **PUT** /learn/api/public/v1/courses/{courseId}/contents/{contentId}/groups/{groupId} | Create Content Group
+[**coursesCourseIdContentsContentIdGroupsGet**](ContentGroupAssignmentsApi.md#coursesCourseIdContentsContentIdGroupsGet) | **GET** courses/{courseId}/contents/{contentId}/groups | Get Content Groups
+[**coursesCourseIdContentsContentIdGroupsGroupIdDelete**](ContentGroupAssignmentsApi.md#coursesCourseIdContentsContentIdGroupsGroupIdDelete) | **DELETE** courses/{courseId}/contents/{contentId}/groups/{groupId} | Delete Content Group
+[**coursesCourseIdContentsContentIdGroupsGroupIdGet**](ContentGroupAssignmentsApi.md#coursesCourseIdContentsContentIdGroupsGroupIdGet) | **GET** courses/{courseId}/contents/{contentId}/groups/{groupId} | Get Content Group
+[**coursesCourseIdContentsContentIdGroupsGroupIdPut**](ContentGroupAssignmentsApi.md#coursesCourseIdContentsContentIdGroupsGroupIdPut) | **PUT** courses/{courseId}/contents/{contentId}/groups/{groupId} | Create Content Group
 
 
-# **learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet**
-> \BlackboardRest\Model\InlineResponse2004 learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet($course_id, $content_id, $offset, $limit, $fields)
+# **coursesCourseIdContentsContentIdGroupsGet**
+> \BlackboardRest\Model\InlineResponse2004 coursesCourseIdContentsContentIdGroupsGet($course_id, $content_id, $offset, $limit, $fields)
 
 Get Content Groups
 
@@ -35,10 +35,10 @@ $limit = 56; // int | The maximum number of results to be returned. There may be
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet($course_id, $content_id, $offset, $limit, $fields);
+    $result = $api_instance->coursesCourseIdContentsContentIdGroupsGet($course_id, $content_id, $offset, $limit, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ContentGroupAssignmentsApi->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContentGroupAssignmentsApi->coursesCourseIdContentsContentIdGroupsGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -68,8 +68,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete**
-> learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete($course_id, $content_id, $group_id)
+# **coursesCourseIdContentsContentIdGroupsGroupIdDelete**
+> coursesCourseIdContentsContentIdGroupsGroupIdDelete($course_id, $content_id, $group_id)
 
 Delete Content Group
 
@@ -91,9 +91,9 @@ $content_id = "content_id_example"; // string |
 $group_id = "group_id_example"; // string | The group ID.  This may be the primary ID, or any of the secondary IDs prefixed with the ID type.    | ID type    | Example                               |  |------------|---------------------------------------|  | primary    | _123_1                                |  | externalId | externalId:breakfastClub              |
 
 try {
-    $api_instance->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete($course_id, $content_id, $group_id);
+    $api_instance->coursesCourseIdContentsContentIdGroupsGroupIdDelete($course_id, $content_id, $group_id);
 } catch (Exception $e) {
-    echo 'Exception when calling ContentGroupAssignmentsApi->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContentGroupAssignmentsApi->coursesCourseIdContentsContentIdGroupsGroupIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -121,8 +121,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet**
-> \BlackboardRest\Model\ContentGroup learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet($course_id, $content_id, $group_id, $fields)
+# **coursesCourseIdContentsContentIdGroupsGroupIdGet**
+> \BlackboardRest\Model\ContentGroup coursesCourseIdContentsContentIdGroupsGroupIdGet($course_id, $content_id, $group_id, $fields)
 
 Get Content Group
 
@@ -145,10 +145,10 @@ $group_id = "group_id_example"; // string | The group ID.  This may be the prima
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet($course_id, $content_id, $group_id, $fields);
+    $result = $api_instance->coursesCourseIdContentsContentIdGroupsGroupIdGet($course_id, $content_id, $group_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ContentGroupAssignmentsApi->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContentGroupAssignmentsApi->coursesCourseIdContentsContentIdGroupsGroupIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -177,8 +177,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut**
-> \BlackboardRest\Model\ContentGroup learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut($course_id, $content_id, $group_id, $input, $fields)
+# **coursesCourseIdContentsContentIdGroupsGroupIdPut**
+> \BlackboardRest\Model\ContentGroup coursesCourseIdContentsContentIdGroupsGroupIdPut($course_id, $content_id, $group_id, $input, $fields)
 
 Create Content Group
 
@@ -202,10 +202,10 @@ $input = new \BlackboardRest\Model\Input7(); // \BlackboardRest\Model\Input7 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut($course_id, $content_id, $group_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdContentsContentIdGroupsGroupIdPut($course_id, $content_id, $group_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ContentGroupAssignmentsApi->learnApiPublicV1CoursesCourseIdContentsContentIdGroupsGroupIdPut: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContentGroupAssignmentsApi->coursesCourseIdContentsContentIdGroupsGroupIdPut: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

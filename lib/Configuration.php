@@ -88,7 +88,7 @@ class Configuration
      *
      * @var string
      */
-    protected $host = 'https://localhost';
+    protected $host = 'https://localhost/learn/api/public/v1/';
 
     /**
      * Timeout (second) of the HTTP request, by default set to 0, no timeout

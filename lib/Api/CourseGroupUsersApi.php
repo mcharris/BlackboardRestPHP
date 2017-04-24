@@ -88,7 +88,7 @@ class CourseGroupUsersApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet
+     * Operation coursesCourseIdGroupsGroupIdUsersGet
      *
      * Get Group Memberships
      *
@@ -100,14 +100,14 @@ class CourseGroupUsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\InlineResponse20013
      */
-    public function learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet($group_id, $course_id, $offset = null, $limit = null, $fields = null)
+    public function coursesCourseIdGroupsGroupIdUsersGet($group_id, $course_id, $offset = null, $limit = null, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGetWithHttpInfo($group_id, $course_id, $offset, $limit, $fields);
+        list($response) = $this->coursesCourseIdGroupsGroupIdUsersGetWithHttpInfo($group_id, $course_id, $offset, $limit, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGetWithHttpInfo
+     * Operation coursesCourseIdGroupsGroupIdUsersGetWithHttpInfo
      *
      * Get Group Memberships
      *
@@ -119,18 +119,18 @@ class CourseGroupUsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\InlineResponse20013, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGetWithHttpInfo($group_id, $course_id, $offset = null, $limit = null, $fields = null)
+    public function coursesCourseIdGroupsGroupIdUsersGetWithHttpInfo($group_id, $course_id, $offset = null, $limit = null, $fields = null)
     {
         // verify the required parameter 'group_id' is set
         if ($group_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet');
+            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling coursesCourseIdGroupsGroupIdUsersGet');
         }
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGroupsGroupIdUsersGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/groups/{groupId}/users";
+        $resourcePath = "courses/{courseId}/groups/{groupId}/users";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -193,7 +193,7 @@ class CourseGroupUsersApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\InlineResponse20013',
-                '/learn/api/public/v1/courses/{courseId}/groups/{groupId}/users'
+                'courses/{courseId}/groups/{groupId}/users'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\InlineResponse20013', $httpHeader), $statusCode, $httpHeader];
@@ -218,7 +218,7 @@ class CourseGroupUsersApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete
+     * Operation coursesCourseIdGroupsGroupIdUsersUserIdDelete
      *
      * Delete Group Membership
      *
@@ -228,14 +228,14 @@ class CourseGroupUsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return void
      */
-    public function learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete($course_id, $group_id, $user_id)
+    public function coursesCourseIdGroupsGroupIdUsersUserIdDelete($course_id, $group_id, $user_id)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDeleteWithHttpInfo($course_id, $group_id, $user_id);
+        list($response) = $this->coursesCourseIdGroupsGroupIdUsersUserIdDeleteWithHttpInfo($course_id, $group_id, $user_id);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDeleteWithHttpInfo
+     * Operation coursesCourseIdGroupsGroupIdUsersUserIdDeleteWithHttpInfo
      *
      * Delete Group Membership
      *
@@ -245,22 +245,22 @@ class CourseGroupUsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDeleteWithHttpInfo($course_id, $group_id, $user_id)
+    public function coursesCourseIdGroupsGroupIdUsersUserIdDeleteWithHttpInfo($course_id, $group_id, $user_id)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGroupsGroupIdUsersUserIdDelete');
         }
         // verify the required parameter 'group_id' is set
         if ($group_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling coursesCourseIdGroupsGroupIdUsersUserIdDelete');
         }
         // verify the required parameter 'user_id' is set
         if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdDelete');
+            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling coursesCourseIdGroupsGroupIdUsersUserIdDelete');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId}";
+        $resourcePath = "courses/{courseId}/groups/{groupId}/users/{userId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -319,7 +319,7 @@ class CourseGroupUsersApi
                 $httpBody,
                 $headerParams,
                 null,
-                '/learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId}'
+                'courses/{courseId}/groups/{groupId}/users/{userId}'
             );
 
             return [null, $statusCode, $httpHeader];
@@ -344,7 +344,7 @@ class CourseGroupUsersApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet
+     * Operation coursesCourseIdGroupsGroupIdUsersUserIdGet
      *
      * Get Group Membership
      *
@@ -355,14 +355,14 @@ class CourseGroupUsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\GroupMembership
      */
-    public function learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet($course_id, $group_id, $user_id, $fields = null)
+    public function coursesCourseIdGroupsGroupIdUsersUserIdGet($course_id, $group_id, $user_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGetWithHttpInfo($course_id, $group_id, $user_id, $fields);
+        list($response) = $this->coursesCourseIdGroupsGroupIdUsersUserIdGetWithHttpInfo($course_id, $group_id, $user_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGetWithHttpInfo
+     * Operation coursesCourseIdGroupsGroupIdUsersUserIdGetWithHttpInfo
      *
      * Get Group Membership
      *
@@ -373,22 +373,22 @@ class CourseGroupUsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\GroupMembership, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGetWithHttpInfo($course_id, $group_id, $user_id, $fields = null)
+    public function coursesCourseIdGroupsGroupIdUsersUserIdGetWithHttpInfo($course_id, $group_id, $user_id, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGroupsGroupIdUsersUserIdGet');
         }
         // verify the required parameter 'group_id' is set
         if ($group_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling coursesCourseIdGroupsGroupIdUsersUserIdGet');
         }
         // verify the required parameter 'user_id' is set
         if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdGet');
+            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling coursesCourseIdGroupsGroupIdUsersUserIdGet');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId}";
+        $resourcePath = "courses/{courseId}/groups/{groupId}/users/{userId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -451,7 +451,7 @@ class CourseGroupUsersApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\GroupMembership',
-                '/learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId}'
+                'courses/{courseId}/groups/{groupId}/users/{userId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\GroupMembership', $httpHeader), $statusCode, $httpHeader];
@@ -480,7 +480,7 @@ class CourseGroupUsersApi
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut
+     * Operation coursesCourseIdGroupsGroupIdUsersUserIdPut
      *
      * Put Group Membership
      *
@@ -491,14 +491,14 @@ class CourseGroupUsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return \BlackboardRest\Model\GroupMembership
      */
-    public function learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut($course_id, $group_id, $user_id, $fields = null)
+    public function coursesCourseIdGroupsGroupIdUsersUserIdPut($course_id, $group_id, $user_id, $fields = null)
     {
-        list($response) = $this->learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPutWithHttpInfo($course_id, $group_id, $user_id, $fields);
+        list($response) = $this->coursesCourseIdGroupsGroupIdUsersUserIdPutWithHttpInfo($course_id, $group_id, $user_id, $fields);
         return $response;
     }
 
     /**
-     * Operation learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPutWithHttpInfo
+     * Operation coursesCourseIdGroupsGroupIdUsersUserIdPutWithHttpInfo
      *
      * Put Group Membership
      *
@@ -509,22 +509,22 @@ class CourseGroupUsersApi
      * @throws \BlackboardRest\ApiException on non-2xx response
      * @return array of \BlackboardRest\Model\GroupMembership, HTTP status code, HTTP response headers (array of strings)
      */
-    public function learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPutWithHttpInfo($course_id, $group_id, $user_id, $fields = null)
+    public function coursesCourseIdGroupsGroupIdUsersUserIdPutWithHttpInfo($course_id, $group_id, $user_id, $fields = null)
     {
         // verify the required parameter 'course_id' is set
         if ($course_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut');
+            throw new \InvalidArgumentException('Missing the required parameter $course_id when calling coursesCourseIdGroupsGroupIdUsersUserIdPut');
         }
         // verify the required parameter 'group_id' is set
         if ($group_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut');
+            throw new \InvalidArgumentException('Missing the required parameter $group_id when calling coursesCourseIdGroupsGroupIdUsersUserIdPut');
         }
         // verify the required parameter 'user_id' is set
         if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling learnApiPublicV1CoursesCourseIdGroupsGroupIdUsersUserIdPut');
+            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling coursesCourseIdGroupsGroupIdUsersUserIdPut');
         }
         // parse inputs
-        $resourcePath = "/learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId}";
+        $resourcePath = "courses/{courseId}/groups/{groupId}/users/{userId}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -587,7 +587,7 @@ class CourseGroupUsersApi
                 $httpBody,
                 $headerParams,
                 '\BlackboardRest\Model\GroupMembership',
-                '/learn/api/public/v1/courses/{courseId}/groups/{groupId}/users/{userId}'
+                'courses/{courseId}/groups/{groupId}/users/{userId}'
             );
 
             return [$this->apiClient->getSerializer()->deserialize($response, '\BlackboardRest\Model\GroupMembership', $httpHeader), $statusCode, $httpHeader];

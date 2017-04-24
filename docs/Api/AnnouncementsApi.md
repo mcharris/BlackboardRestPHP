@@ -1,18 +1,18 @@
 # BlackboardRest\AnnouncementsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1AnnouncementsAnnouncementIdDelete**](AnnouncementsApi.md#learnApiPublicV1AnnouncementsAnnouncementIdDelete) | **DELETE** /learn/api/public/v1/announcements/{announcementId} | Delete Announcement
-[**learnApiPublicV1AnnouncementsAnnouncementIdGet**](AnnouncementsApi.md#learnApiPublicV1AnnouncementsAnnouncementIdGet) | **GET** /learn/api/public/v1/announcements/{announcementId} | Get Announcement
-[**learnApiPublicV1AnnouncementsAnnouncementIdPatch**](AnnouncementsApi.md#learnApiPublicV1AnnouncementsAnnouncementIdPatch) | **PATCH** /learn/api/public/v1/announcements/{announcementId} | Update Announcement
-[**learnApiPublicV1AnnouncementsGet**](AnnouncementsApi.md#learnApiPublicV1AnnouncementsGet) | **GET** /learn/api/public/v1/announcements | Get Announcements
-[**learnApiPublicV1AnnouncementsPost**](AnnouncementsApi.md#learnApiPublicV1AnnouncementsPost) | **POST** /learn/api/public/v1/announcements | Create Announcement
+[**announcementsAnnouncementIdDelete**](AnnouncementsApi.md#announcementsAnnouncementIdDelete) | **DELETE** announcements/{announcementId} | Delete Announcement
+[**announcementsAnnouncementIdGet**](AnnouncementsApi.md#announcementsAnnouncementIdGet) | **GET** announcements/{announcementId} | Get Announcement
+[**announcementsAnnouncementIdPatch**](AnnouncementsApi.md#announcementsAnnouncementIdPatch) | **PATCH** announcements/{announcementId} | Update Announcement
+[**announcementsGet**](AnnouncementsApi.md#announcementsGet) | **GET** announcements | Get Announcements
+[**announcementsPost**](AnnouncementsApi.md#announcementsPost) | **POST** announcements | Create Announcement
 
 
-# **learnApiPublicV1AnnouncementsAnnouncementIdDelete**
-> learnApiPublicV1AnnouncementsAnnouncementIdDelete($announcement_id, $fields)
+# **announcementsAnnouncementIdDelete**
+> announcementsAnnouncementIdDelete($announcement_id, $fields)
 
 Delete Announcement
 
@@ -33,9 +33,9 @@ $announcement_id = "announcement_id_example"; // string |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $api_instance->learnApiPublicV1AnnouncementsAnnouncementIdDelete($announcement_id, $fields);
+    $api_instance->announcementsAnnouncementIdDelete($announcement_id, $fields);
 } catch (Exception $e) {
-    echo 'Exception when calling AnnouncementsApi->learnApiPublicV1AnnouncementsAnnouncementIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling AnnouncementsApi->announcementsAnnouncementIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -62,8 +62,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1AnnouncementsAnnouncementIdGet**
-> \BlackboardRest\Model\Announcement learnApiPublicV1AnnouncementsAnnouncementIdGet($announcement_id, $fields)
+# **announcementsAnnouncementIdGet**
+> \BlackboardRest\Model\Announcement announcementsAnnouncementIdGet($announcement_id, $fields)
 
 Get Announcement
 
@@ -84,10 +84,10 @@ $announcement_id = "announcement_id_example"; // string |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1AnnouncementsAnnouncementIdGet($announcement_id, $fields);
+    $result = $api_instance->announcementsAnnouncementIdGet($announcement_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AnnouncementsApi->learnApiPublicV1AnnouncementsAnnouncementIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling AnnouncementsApi->announcementsAnnouncementIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -114,8 +114,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1AnnouncementsAnnouncementIdPatch**
-> \BlackboardRest\Model\Announcement learnApiPublicV1AnnouncementsAnnouncementIdPatch($announcement_id, $input, $fields)
+# **announcementsAnnouncementIdPatch**
+> \BlackboardRest\Model\Announcement announcementsAnnouncementIdPatch($announcement_id, $input, $fields)
 
 Update Announcement
 
@@ -137,10 +137,10 @@ $input = new \BlackboardRest\Model\Input1(); // \BlackboardRest\Model\Input1 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1AnnouncementsAnnouncementIdPatch($announcement_id, $input, $fields);
+    $result = $api_instance->announcementsAnnouncementIdPatch($announcement_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AnnouncementsApi->learnApiPublicV1AnnouncementsAnnouncementIdPatch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling AnnouncementsApi->announcementsAnnouncementIdPatch: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -168,8 +168,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1AnnouncementsGet**
-> \BlackboardRest\Model\InlineResponse200 learnApiPublicV1AnnouncementsGet($offset, $limit, $fields)
+# **announcementsGet**
+> \BlackboardRest\Model\InlineResponse200 announcementsGet($offset, $limit, $fields)
 
 Get Announcements
 
@@ -191,10 +191,10 @@ $limit = 56; // int | The maximum number of results to be returned. There may be
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1AnnouncementsGet($offset, $limit, $fields);
+    $result = $api_instance->announcementsGet($offset, $limit, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AnnouncementsApi->learnApiPublicV1AnnouncementsGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling AnnouncementsApi->announcementsGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -222,8 +222,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1AnnouncementsPost**
-> \BlackboardRest\Model\Announcement learnApiPublicV1AnnouncementsPost($input, $fields)
+# **announcementsPost**
+> \BlackboardRest\Model\Announcement announcementsPost($input, $fields)
 
 Create Announcement
 
@@ -244,10 +244,10 @@ $input = new \BlackboardRest\Model\Input(); // \BlackboardRest\Model\Input |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1AnnouncementsPost($input, $fields);
+    $result = $api_instance->announcementsPost($input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AnnouncementsApi->learnApiPublicV1AnnouncementsPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling AnnouncementsApi->announcementsPost: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

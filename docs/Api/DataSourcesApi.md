@@ -1,18 +1,18 @@
 # BlackboardRest\DataSourcesApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1DataSourcesDataSourceIdDelete**](DataSourcesApi.md#learnApiPublicV1DataSourcesDataSourceIdDelete) | **DELETE** /learn/api/public/v1/dataSources/{dataSourceId} | Delete Data Source
-[**learnApiPublicV1DataSourcesDataSourceIdGet**](DataSourcesApi.md#learnApiPublicV1DataSourcesDataSourceIdGet) | **GET** /learn/api/public/v1/dataSources/{dataSourceId} | Get Data Source
-[**learnApiPublicV1DataSourcesDataSourceIdPatch**](DataSourcesApi.md#learnApiPublicV1DataSourcesDataSourceIdPatch) | **PATCH** /learn/api/public/v1/dataSources/{dataSourceId} | Update Data Source
-[**learnApiPublicV1DataSourcesGet**](DataSourcesApi.md#learnApiPublicV1DataSourcesGet) | **GET** /learn/api/public/v1/dataSources | Get Data Sources
-[**learnApiPublicV1DataSourcesPost**](DataSourcesApi.md#learnApiPublicV1DataSourcesPost) | **POST** /learn/api/public/v1/dataSources | Create Data Source
+[**dataSourcesDataSourceIdDelete**](DataSourcesApi.md#dataSourcesDataSourceIdDelete) | **DELETE** dataSources/{dataSourceId} | Delete Data Source
+[**dataSourcesDataSourceIdGet**](DataSourcesApi.md#dataSourcesDataSourceIdGet) | **GET** dataSources/{dataSourceId} | Get Data Source
+[**dataSourcesDataSourceIdPatch**](DataSourcesApi.md#dataSourcesDataSourceIdPatch) | **PATCH** dataSources/{dataSourceId} | Update Data Source
+[**dataSourcesGet**](DataSourcesApi.md#dataSourcesGet) | **GET** dataSources | Get Data Sources
+[**dataSourcesPost**](DataSourcesApi.md#dataSourcesPost) | **POST** dataSources | Create Data Source
 
 
-# **learnApiPublicV1DataSourcesDataSourceIdDelete**
-> learnApiPublicV1DataSourcesDataSourceIdDelete($data_source_id, $fields)
+# **dataSourcesDataSourceIdDelete**
+> dataSourcesDataSourceIdDelete($data_source_id, $fields)
 
 Delete Data Source
 
@@ -33,9 +33,9 @@ $data_source_id = "data_source_id_example"; // string | The data source ID.  Thi
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $api_instance->learnApiPublicV1DataSourcesDataSourceIdDelete($data_source_id, $fields);
+    $api_instance->dataSourcesDataSourceIdDelete($data_source_id, $fields);
 } catch (Exception $e) {
-    echo 'Exception when calling DataSourcesApi->learnApiPublicV1DataSourcesDataSourceIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling DataSourcesApi->dataSourcesDataSourceIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -62,8 +62,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1DataSourcesDataSourceIdGet**
-> \BlackboardRest\Model\DataSource learnApiPublicV1DataSourcesDataSourceIdGet($data_source_id, $fields)
+# **dataSourcesDataSourceIdGet**
+> \BlackboardRest\Model\DataSource dataSourcesDataSourceIdGet($data_source_id, $fields)
 
 Get Data Source
 
@@ -84,10 +84,10 @@ $data_source_id = "data_source_id_example"; // string | The data source ID.  Thi
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1DataSourcesDataSourceIdGet($data_source_id, $fields);
+    $result = $api_instance->dataSourcesDataSourceIdGet($data_source_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DataSourcesApi->learnApiPublicV1DataSourcesDataSourceIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling DataSourcesApi->dataSourcesDataSourceIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -114,8 +114,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1DataSourcesDataSourceIdPatch**
-> \BlackboardRest\Model\DataSource learnApiPublicV1DataSourcesDataSourceIdPatch($data_source_id, $input, $fields)
+# **dataSourcesDataSourceIdPatch**
+> \BlackboardRest\Model\DataSource dataSourcesDataSourceIdPatch($data_source_id, $input, $fields)
 
 Update Data Source
 
@@ -137,10 +137,10 @@ $input = new \BlackboardRest\Model\Input11(); // \BlackboardRest\Model\Input11 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1DataSourcesDataSourceIdPatch($data_source_id, $input, $fields);
+    $result = $api_instance->dataSourcesDataSourceIdPatch($data_source_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DataSourcesApi->learnApiPublicV1DataSourcesDataSourceIdPatch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling DataSourcesApi->dataSourcesDataSourceIdPatch: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -168,8 +168,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1DataSourcesGet**
-> \BlackboardRest\Model\InlineResponse2006 learnApiPublicV1DataSourcesGet($offset, $limit, $external_id, $fields)
+# **dataSourcesGet**
+> \BlackboardRest\Model\InlineResponse2006 dataSourcesGet($offset, $limit, $external_id, $fields)
 
 Get Data Sources
 
@@ -192,10 +192,10 @@ $external_id = "external_id_example"; // string | The 'batchUid' value to use as
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1DataSourcesGet($offset, $limit, $external_id, $fields);
+    $result = $api_instance->dataSourcesGet($offset, $limit, $external_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DataSourcesApi->learnApiPublicV1DataSourcesGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling DataSourcesApi->dataSourcesGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -224,8 +224,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1DataSourcesPost**
-> \BlackboardRest\Model\DataSource learnApiPublicV1DataSourcesPost($input, $fields)
+# **dataSourcesPost**
+> \BlackboardRest\Model\DataSource dataSourcesPost($input, $fields)
 
 Create Data Source
 
@@ -246,10 +246,10 @@ $input = new \BlackboardRest\Model\Input10(); // \BlackboardRest\Model\Input10 |
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1DataSourcesPost($input, $fields);
+    $result = $api_instance->dataSourcesPost($input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DataSourcesApi->learnApiPublicV1DataSourcesPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling DataSourcesApi->dataSourcesPost: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

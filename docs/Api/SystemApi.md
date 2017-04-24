@@ -1,14 +1,14 @@
 # BlackboardRest\SystemApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1SystemVersionGet**](SystemApi.md#learnApiPublicV1SystemVersionGet) | **GET** /learn/api/public/v1/system/version | Get Version
+[**systemVersionGet**](SystemApi.md#systemVersionGet) | **GET** system/version | Get Version
 
 
-# **learnApiPublicV1SystemVersionGet**
-> \BlackboardRest\Model\VersionInfo learnApiPublicV1SystemVersionGet()
+# **systemVersionGet**
+> \BlackboardRest\Model\VersionInfo systemVersionGet()
 
 Get Version
 
@@ -27,10 +27,10 @@ BlackboardRest\Configuration::getDefaultConfiguration()->setApiKey('Authorizatio
 $api_instance = new BlackboardRest\Api\SystemApi();
 
 try {
-    $result = $api_instance->learnApiPublicV1SystemVersionGet();
+    $result = $api_instance->systemVersionGet();
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling SystemApi->learnApiPublicV1SystemVersionGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling SystemApi->systemVersionGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

@@ -77,12 +77,12 @@ class OauthApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1Oauth2TokenPost
+     * Test case for oauth2TokenPost
      *
      * Request Token.
      *
      */
-    public function testLearnApiPublicV1Oauth2TokenPost()
+    public function testOauth2TokenPost()
     {
 
     }

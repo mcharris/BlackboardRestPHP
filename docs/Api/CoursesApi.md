@@ -1,20 +1,20 @@
 # BlackboardRest\CoursesApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://localhost/learn/api/public/v1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet**](CoursesApi.md#learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet) | **GET** /learn/api/public/v1/courses/{courseId}/children/{childCourseId} | Get Child
-[**learnApiPublicV1CoursesCourseIdChildrenGet**](CoursesApi.md#learnApiPublicV1CoursesCourseIdChildrenGet) | **GET** /learn/api/public/v1/courses/{courseId}/children | Get Children
-[**learnApiPublicV1CoursesCourseIdDelete**](CoursesApi.md#learnApiPublicV1CoursesCourseIdDelete) | **DELETE** /learn/api/public/v1/courses/{courseId} | Delete Course
-[**learnApiPublicV1CoursesCourseIdGet**](CoursesApi.md#learnApiPublicV1CoursesCourseIdGet) | **GET** /learn/api/public/v1/courses/{courseId} | Get Course
-[**learnApiPublicV1CoursesCourseIdPatch**](CoursesApi.md#learnApiPublicV1CoursesCourseIdPatch) | **PATCH** /learn/api/public/v1/courses/{courseId} | Update Course
-[**learnApiPublicV1CoursesGet**](CoursesApi.md#learnApiPublicV1CoursesGet) | **GET** /learn/api/public/v1/courses | Get Courses
-[**learnApiPublicV1CoursesPost**](CoursesApi.md#learnApiPublicV1CoursesPost) | **POST** /learn/api/public/v1/courses | Create Course
+[**coursesCourseIdChildrenChildCourseIdGet**](CoursesApi.md#coursesCourseIdChildrenChildCourseIdGet) | **GET** courses/{courseId}/children/{childCourseId} | Get Child
+[**coursesCourseIdChildrenGet**](CoursesApi.md#coursesCourseIdChildrenGet) | **GET** courses/{courseId}/children | Get Children
+[**coursesCourseIdDelete**](CoursesApi.md#coursesCourseIdDelete) | **DELETE** courses/{courseId} | Delete Course
+[**coursesCourseIdGet**](CoursesApi.md#coursesCourseIdGet) | **GET** courses/{courseId} | Get Course
+[**coursesCourseIdPatch**](CoursesApi.md#coursesCourseIdPatch) | **PATCH** courses/{courseId} | Update Course
+[**coursesGet**](CoursesApi.md#coursesGet) | **GET** courses | Get Courses
+[**coursesPost**](CoursesApi.md#coursesPost) | **POST** courses | Create Course
 
 
-# **learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet**
-> \BlackboardRest\Model\CourseChild learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet($course_id, $child_course_id, $fields)
+# **coursesCourseIdChildrenChildCourseIdGet**
+> \BlackboardRest\Model\CourseChild coursesCourseIdChildrenChildCourseIdGet($course_id, $child_course_id, $fields)
 
 Get Child
 
@@ -36,10 +36,10 @@ $child_course_id = "child_course_id_example"; // string | The course or organiza
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet($course_id, $child_course_id, $fields);
+    $result = $api_instance->coursesCourseIdChildrenChildCourseIdGet($course_id, $child_course_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CoursesApi->learnApiPublicV1CoursesCourseIdChildrenChildCourseIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CoursesApi->coursesCourseIdChildrenChildCourseIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -67,8 +67,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdChildrenGet**
-> \BlackboardRest\Model\InlineResponse2002 learnApiPublicV1CoursesCourseIdChildrenGet($course_id, $offset, $limit, $fields)
+# **coursesCourseIdChildrenGet**
+> \BlackboardRest\Model\InlineResponse2002 coursesCourseIdChildrenGet($course_id, $offset, $limit, $fields)
 
 Get Children
 
@@ -91,10 +91,10 @@ $limit = 56; // int | The maximum number of results to be returned. There may be
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdChildrenGet($course_id, $offset, $limit, $fields);
+    $result = $api_instance->coursesCourseIdChildrenGet($course_id, $offset, $limit, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CoursesApi->learnApiPublicV1CoursesCourseIdChildrenGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CoursesApi->coursesCourseIdChildrenGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -123,8 +123,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdDelete**
-> learnApiPublicV1CoursesCourseIdDelete($course_id, $remove_files)
+# **coursesCourseIdDelete**
+> coursesCourseIdDelete($course_id, $remove_files)
 
 Delete Course
 
@@ -145,9 +145,9 @@ $course_id = "course_id_example"; // string | The course or organization ID.  Th
 $remove_files = true; // bool | Whether to delete course files.  Defaults to true.
 
 try {
-    $api_instance->learnApiPublicV1CoursesCourseIdDelete($course_id, $remove_files);
+    $api_instance->coursesCourseIdDelete($course_id, $remove_files);
 } catch (Exception $e) {
-    echo 'Exception when calling CoursesApi->learnApiPublicV1CoursesCourseIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CoursesApi->coursesCourseIdDelete: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -174,8 +174,8 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdGet**
-> \BlackboardRest\Model\Course learnApiPublicV1CoursesCourseIdGet($course_id, $fields)
+# **coursesCourseIdGet**
+> \BlackboardRest\Model\Course coursesCourseIdGet($course_id, $fields)
 
 Get Course
 
@@ -196,10 +196,10 @@ $course_id = "course_id_example"; // string | The course or organization ID.  Th
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdGet($course_id, $fields);
+    $result = $api_instance->coursesCourseIdGet($course_id, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CoursesApi->learnApiPublicV1CoursesCourseIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CoursesApi->coursesCourseIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -226,8 +226,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesCourseIdPatch**
-> \BlackboardRest\Model\Course learnApiPublicV1CoursesCourseIdPatch($course_id, $input, $fields)
+# **coursesCourseIdPatch**
+> \BlackboardRest\Model\Course coursesCourseIdPatch($course_id, $input, $fields)
 
 Update Course
 
@@ -249,10 +249,10 @@ $input = new \BlackboardRest\Model\Input3(); // \BlackboardRest\Model\Input3 | J
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesCourseIdPatch($course_id, $input, $fields);
+    $result = $api_instance->coursesCourseIdPatch($course_id, $input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CoursesApi->learnApiPublicV1CoursesCourseIdPatch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CoursesApi->coursesCourseIdPatch: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -280,8 +280,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesGet**
-> \BlackboardRest\Model\InlineResponse2001 learnApiPublicV1CoursesGet($offset, $limit, $course_id, $name, $description, $external_id, $created, $created_compare, $data_source_id, $term_id, $organization, $sort, $fields)
+# **coursesGet**
+> \BlackboardRest\Model\InlineResponse2001 coursesGet($offset, $limit, $course_id, $name, $description, $external_id, $created, $created_compare, $data_source_id, $term_id, $organization, $sort, $fields)
 
 Get Courses
 
@@ -313,10 +313,10 @@ $sort = "sort_example"; // string | Properties to sort by. This is a comma-delim
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesGet($offset, $limit, $course_id, $name, $description, $external_id, $created, $created_compare, $data_source_id, $term_id, $organization, $sort, $fields);
+    $result = $api_instance->coursesGet($offset, $limit, $course_id, $name, $description, $external_id, $created, $created_compare, $data_source_id, $term_id, $organization, $sort, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CoursesApi->learnApiPublicV1CoursesGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CoursesApi->coursesGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -354,8 +354,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **learnApiPublicV1CoursesPost**
-> \BlackboardRest\Model\Course learnApiPublicV1CoursesPost($input, $fields)
+# **coursesPost**
+> \BlackboardRest\Model\Course coursesPost($input, $fields)
 
 Create Course
 
@@ -376,10 +376,10 @@ $input = new \BlackboardRest\Model\Input2(); // \BlackboardRest\Model\Input2 | J
 $fields = "fields_example"; // string | A comma-delimited list of fields to include in the response. If not specified, all fields will be returned.
 
 try {
-    $result = $api_instance->learnApiPublicV1CoursesPost($input, $fields);
+    $result = $api_instance->coursesPost($input, $fields);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CoursesApi->learnApiPublicV1CoursesPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling CoursesApi->coursesPost: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

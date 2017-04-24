@@ -77,56 +77,56 @@ class TermsApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1TermsGet
+     * Test case for termsGet
      *
      * Get Terms.
      *
      */
-    public function testLearnApiPublicV1TermsGet()
+    public function testTermsGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1TermsPost
+     * Test case for termsPost
      *
      * Create Term.
      *
      */
-    public function testLearnApiPublicV1TermsPost()
+    public function testTermsPost()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1TermsTermIdDelete
+     * Test case for termsTermIdDelete
      *
      * Delete Term.
      *
      */
-    public function testLearnApiPublicV1TermsTermIdDelete()
+    public function testTermsTermIdDelete()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1TermsTermIdGet
+     * Test case for termsTermIdGet
      *
      * Get Term.
      *
      */
-    public function testLearnApiPublicV1TermsTermIdGet()
+    public function testTermsTermIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1TermsTermIdPatch
+     * Test case for termsTermIdPatch
      *
      * Update Term.
      *
      */
-    public function testLearnApiPublicV1TermsTermIdPatch()
+    public function testTermsTermIdPatch()
     {
 
     }

@@ -77,56 +77,56 @@ class DataSourcesApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for learnApiPublicV1DataSourcesDataSourceIdDelete
+     * Test case for dataSourcesDataSourceIdDelete
      *
      * Delete Data Source.
      *
      */
-    public function testLearnApiPublicV1DataSourcesDataSourceIdDelete()
+    public function testDataSourcesDataSourceIdDelete()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1DataSourcesDataSourceIdGet
+     * Test case for dataSourcesDataSourceIdGet
      *
      * Get Data Source.
      *
      */
-    public function testLearnApiPublicV1DataSourcesDataSourceIdGet()
+    public function testDataSourcesDataSourceIdGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1DataSourcesDataSourceIdPatch
+     * Test case for dataSourcesDataSourceIdPatch
      *
      * Update Data Source.
      *
      */
-    public function testLearnApiPublicV1DataSourcesDataSourceIdPatch()
+    public function testDataSourcesDataSourceIdPatch()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1DataSourcesGet
+     * Test case for dataSourcesGet
      *
      * Get Data Sources.
      *
      */
-    public function testLearnApiPublicV1DataSourcesGet()
+    public function testDataSourcesGet()
     {
 
     }
 
     /**
-     * Test case for learnApiPublicV1DataSourcesPost
+     * Test case for dataSourcesPost
      *
      * Create Data Source.
      *
      */
-    public function testLearnApiPublicV1DataSourcesPost()
+    public function testDataSourcesPost()
     {
 
     }
